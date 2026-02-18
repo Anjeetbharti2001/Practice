@@ -1,9 +1,20 @@
 import java.util.*;
 public class Thursday{
     public static void main(String args[]){
-        // check if array is sorted (acending order)
-        int arr[] = {9,8,7,6,5,4,3,2,1};
-         Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
+        // Search an element in Array
+        int arr[] = {4,5,2,6,8};
+        int key = 2;
+        boolean found = false;
+        for(int i=0; i<arr.length; i++){
+            if(arr[i] == key){
+                System.out.println(" Element found at index :-" + i);
+                found = true;
+                break;
+            }
+        }
+        if (!found ){
+
+            System.out.println("Element is not found:-");
+        }
     }
 }
