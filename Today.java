@@ -1,12 +1,13 @@
 public class Today{
     public static void main(String args[]){
-        // find the largest element in array
-        int arr[] = {1, 5,3,6,2};
-             int max = arr[0];
+        // count even number in array element
+        int arr[] = { 3,6,8,8,3,5};
+        int count = 0;
         for(int i = 0; i<arr.length; i++){
-            if(arr[i] > max)
-                max = arr[i];
+            if( arr[i] % 2 == 0){
+                count++;
+            }
         }
-        System.out.println(max);
+        System.out.println(count);
     }
 }
