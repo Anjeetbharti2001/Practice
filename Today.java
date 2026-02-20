@@ -1,15 +1,19 @@
 public class Today{
     public static void main(String args[]){
-        // Student college data for registration 
-        String name = " Anjeet bharti";
-        int age = 25;
-        int num = 2101292045;
-        float fee = 25.5f;
-        char grade = 'b';
-        System.out.println("Student name :-" + name);
-        System.out.println("Student register num:-" + num);
-        System.out.println("student age:-" + age);
-        System.out.println("Student college fee:-" + fee);
-        System.out.println("college grade:-" + grade);
+       // Data types of java
+       int myNum = 5;
+       float myfloatnum = 5.8f;
+       char mychar = 'D';
+       boolean myBool = true;
+       String myText = "Anjeet bharti";
+
+
+
+       System.out.println(myNum);
+       System.out.println(myfloatnum);
+       System.out.println(myBool);
+       System.out.println(mychar);
+       System.out.println(myBool);
+       System.out.println(myText);
     }
 }
