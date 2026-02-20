@@ -1,13 +1,11 @@
 public class Today{
     public static void main(String args[]){
-        String [] fruit  = {"Mango" , " Carrot"," Lichi", "Ananas", " guava", "Papaya" };
-
-        
-        System.out.println(fruit[0]);
-        System.out.println(fruit[5]);
-        System.out.println(fruit[1]);
-        System.out.println(fruit[3]);
-        System.out.println(fruit[2]);
-        System.out.println(fruit[4]);
+        // Sum of all Element an Array
+          int arr[] = {5,7,8,9,3};
+          int  sum = 0;
+          for(int i = 0; i<arr.length; i++){
+            sum += arr[i];
+          }
+          System.out.println(sum);
     }
 }
