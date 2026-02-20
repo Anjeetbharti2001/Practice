@@ -1,19 +1,13 @@
 public class Today{
     public static void main(String args[]){
-       // Data types of java
-       int myNum = 5;
-       float myfloatnum = 5.8f;
-       char mychar = 'D';
-       boolean myBool = true;
-       String myText = "Anjeet bharti";
+        String [] fruit  = {"Mango" , " Carrot"," Lichi", "Ananas", " guava", "Papaya" };
 
-
-
-       System.out.println(myNum);
-       System.out.println(myfloatnum);
-       System.out.println(myBool);
-       System.out.println(mychar);
-       System.out.println(myBool);
-       System.out.println(myText);
+        
+        System.out.println(fruit[0]);
+        System.out.println(fruit[5]);
+        System.out.println(fruit[1]);
+        System.out.println(fruit[3]);
+        System.out.println(fruit[2]);
+        System.out.println(fruit[4]);
     }
 }
