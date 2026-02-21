@@ -1,11 +1,9 @@
+//check of array is sorted(accending order)
+import java.util.*;
 public class Today{
-    public static void main(String arsg[]){
-        // Total sum of array 
-        int arr[] = {2,7,9,3,5,6,7};
-        int sum = 0;
-        for(int i = 0; i<arr.length; i++){
-            sum += arr[i];
-        }
-        System.out.println(sum);
+    public static void main(String args[]){
+        int arr[] = {3,6,8,0,3,7,1};
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
