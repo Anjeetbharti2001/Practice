@@ -1,12 +1,13 @@
 public class Today{
     public static void main(String args[]){
-        // Find the minimum element in array
-        int arr[] = { 3,7,8,9,2};
-        int min = arr[0];
+        // find out the count even number 
+        int arr[] = {2,6,7,8,2,4,6};
+        int count = 0;
         for(int i = 0; i<arr.length; i++){
-            if(arr[i] < min )
-                min = arr[i];
+            if(arr[i] % 2 == 0){
+                count++;
+            }
         }
-        System.out.println(min);
+        System.out.println(count);
     }
 }
