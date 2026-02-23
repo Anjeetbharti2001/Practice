@@ -1,12 +1,12 @@
 public class Today{
     public static void main(String args[]){
-        int arr[] = {4,8,9,4};
-        int min = arr[0];
+        int arr[] = {5,7,8,3,4};
+        int count = 0;
         for(int i = 0; i<arr.length; i++){
-            if(arr[i] < min ){
-                min = arr[i];
+            if(arr[i] % 2 == 0){
+                count++;
             }
         }
-        System.out.println(min);
+        System.out.println(count);
     }
 }
