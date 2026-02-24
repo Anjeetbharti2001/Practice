@@ -1,12 +1,19 @@
 public class Today{
     public static void main(String args[]){
-        int arr[] = {4,7,9,2,4};
-        int count = 0;
+        int arr[] = {3,7,9,3,5,6};
+        int start =  0;
+        int end = arr.length - 1;
+        while (start < end ){
+            // swap
+            int temp = arr[start];
+            arr[end] = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
+        } 
+        // print reverse Array
         for(int i = 0; i<arr.length; i++){
-            if(arr[i] % 2 != 0){// check odd number
-                count++;
-            }
-        }
-        System.out.println(count);
+            System.out.println(arr[i] + " ");
+        }   
     }
 }
