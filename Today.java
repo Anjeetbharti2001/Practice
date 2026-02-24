@@ -1,12 +1,11 @@
 public class Today{
-    public static void main(String args[]){
-        int arr[] = {4,8,9,2,5,3};
-        int count = 0; 
+    public  static void main(String args[]){
+        // Sum of array element in array
+        int arr[] = {5,8,9,2};
+        int sum = 0;
         for(int i = 0; i<arr.length; i++){
-            if(arr[i] % 2 != 0){
-                count++;
-            }
+            sum += arr[i];
         }
-        System.out.println(count);
+        System.out.println(sum);
     }
 }
