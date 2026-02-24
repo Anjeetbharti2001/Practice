@@ -1,11 +1,12 @@
 public class Today{
-    public  static void main(String args[]){
-        // Sum of array element in array
-        int arr[] = {5,8,9,2};
-        int sum = 0;
+    public static void main(String args[]){
+        int arr[] = {4,8,9,22,5};
+        int max = arr[0];
         for(int i = 0; i<arr.length; i++){
-            sum += arr[i];
+            if(arr[i] > max ){
+                max = arr[i];
+            }
         }
-        System.out.println(sum);
+        System.out.println(max);
     }
 }
