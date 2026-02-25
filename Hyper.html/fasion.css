@@ -8,11 +8,13 @@ body{
 .main{
     display: flex;
     height: 100vh;
+    padding: 0.5rem;
 }
 .siddebar{
     background-color: #255;
     width:340px;
     border-radius: 16px;/* 1rem*/
+    margin:0.5rem;
 }
 .main-content{
     background-color:#121212 ;
@@ -63,9 +65,47 @@ a{
 .option{
     display: flex;
     justify-content: space-between;
+    padding-top: 1.25rem;
 }
 .lib-option i{
     height:1.25rem;
     width:1.25rem;
-
 }
+.icons{
+    font-size: 1.25rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+    display: flex;
+}
+.icons i {
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity:1;
+}
+.box{
+    background-color: #232323;
+    height:8rem;
+    border-radius: 0.75rem;
+    margin:0.5rem 0  0.75rem 0;
+    padding: 1rem 1.25rem;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.box-p2{
+    font-size:0.75rem;
+    opacity:0.9;
+}
+.badge{
+    background-color: #fff;
+    border:none;
+    border-radius: 100px;
+    padding:0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+
