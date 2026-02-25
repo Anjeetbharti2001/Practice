@@ -1,7 +1,11 @@
 public class Today{
     public static void main(String args[]){
-        String name = "Anjeet bharti";
-    //    System.out.println(name.toLowerCase());
-    System.out.println(name.toUpperCase());
+        // Find the sum of array
+        int arr[] = {1,9,7,4,3,7};
+        int sum = 0; 
+        for(int i = 0 ; i<arr.length; i++){
+            sum += arr[i];
+        }
+        System.out.println(sum);
     }
 }
