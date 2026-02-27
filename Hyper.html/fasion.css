@@ -107,5 +107,13 @@ a{
     font-weight: 700;
     margin-top: 0.5rem;
 }
+.sticky-nav{
+    position: sticky;
+    top:0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 

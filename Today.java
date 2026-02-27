@@ -1,38 +1,10 @@
-// public class Today{
-//     public static void main(String args[]){
-//         int arr[] = {9,8,7,6,5,4,3,2,1};
-//         for(int i = 0; i<arr.length; i++){
-//             for(int j = 0; j<arr.length - 1 - i; j++){
-//                 if(arr[j] > arr[j + 1]){
-//                     // swap
-//                     int temp = arr[i];
-//                     arr[j] = arr[j + 1];
-//                     arr[j + 1] = temp;
-//                 }
-//             }
-//         }
-//         //print sorted array
-//         for(int i = 0; i<arr.length; i++){
-//             System.out.print(arr[i] + " ");
-//         }
-//     }
-// }
 public class Today{
     public static void main(String args[]){
-        int arr[] = {0,9,8,7,6,5,4,3,2,1};
+        int arr[] = {3,9,5,7,4,5,6};
+        int sum = 0;
         for(int i = 0; i<arr.length; i++){
-            for(int j = 0; j<arr.length - 1 - i; i++){
-                if(arr[j] > arr[j + 1]){
-                    //swap
-                    int temp = arr[i];
-                    arr[j] =arr[j + 1];
-                    arr[j + 1 ] = temp;
-                }
-            }
+            sum += arr[i];
         }
-        // Print sorted array
-        for(int i = 0; i<arr.length; i++){
-            System.out.print(arr[i] + " ");
-        }
+        System.out.println(sum);
     }
 }
