@@ -1,13 +1,12 @@
 public class Today{
     public static void main(String args[]){
-        // Find the largest element in array
-        int arr[] = {7,8,9,5,7,3};
-        int max = arr[0];
+        int arr[] = {5,8,9,5,7,1,0};
+        int min = arr[0];
         for(int i = 0; i<arr.length; i++){
-            if(arr[i] > max){
-                max = arr[i];
+            if(arr[i] < min){
+                min = arr[i];
             }
         }
-        System.out.println(max);
+        System.out.println(min);
     }
 }
