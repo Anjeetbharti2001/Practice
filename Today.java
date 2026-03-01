@@ -1,13 +1,9 @@
-// 1,2,3,4,
+// 1,2,3,4,5
+import java.util.*;
 public class Today{
     public static void main(String args[]){
-        int arr[] = {3,7,9,2,5};
-        int count = 0; 
-        for(int i = 0; i<arr.length; i++){
-            if(arr[i] % 2 != 0){
-                count++;
-            }
-        }
-        System.out.println("Total count odd number :- " + count); 
+        int arr[] = {4,9,2,6,8,4};
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
