@@ -1,12 +1,14 @@
 public class Today{
     public static void main(String args[]){
-        // Sum of all element i array
-        int arr[] = {6,9,0,3,5,6};
-        int sum = 0; 
-        for(int i = 0; i<arr.length; i++){
-            sum += arr[i];
+        // Find the largest element in array
+        int arr[] = {3,8,9,0,5,4,2};
+        int max = arr[0];
+        for(int i = 0 ; i<arr.length; i++){
+            if(arr[i] > max ){
+                max = arr[i];
+            }
         }
-        System.out.println(sum);
+        System.out.println(max);
 
     }
 }
