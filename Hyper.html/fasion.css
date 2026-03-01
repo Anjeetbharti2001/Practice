@@ -120,6 +120,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0 1rem 0;
+    z-index: 10;
 }
 .sticky-nav-icons {
     margin-left: 0.75rem;
@@ -138,24 +139,45 @@ a{
         display: none;
     }
 }
-.cards-container{
-    display: flex;
-}
+
 .card{
     background-color: #232323;
    width:210px;
    height: 360px;
     border-radius: 1rem;
     padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
 }
+.cardcon {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .card-img {
     width: 100%;
     border-radius: 1rem;
 }
+
 .cards-title {
    font-weight: 600;
 }
+
 .card-info{
     font-size: 0.85rem;
     opacity: 0.8;
+}
+
+.footer {
+    height:300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width : 90%;
+    height:30%;
+    border-top: 1px solid white;
+    opacity: 0.4;
 }
