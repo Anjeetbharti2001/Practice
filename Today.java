@@ -1,11 +1,12 @@
 public class Today{
     public static void main(String args[]){
-    //    String str = "";
-       String str = " Anjeet bharti";
-       if(str.isEmpty()){
-        System.out.println("String Empty hai" );
-       }else{
-        System.out.println("String empty nahin hai" );
-       }
+        int arr[] = {5,8,9,0,9};
+        int max= arr[0]; 
+        for(int i = 0; i<arr.length; i++){
+            if(arr[i] > max ){
+                max = arr[i];
+            }
+        }
+        System.out.println(max);
     }
 }
