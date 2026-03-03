@@ -1,13 +1,14 @@
 public class Today{
     public static void main(String args[]){
-        // String str = " ";
-        String str = "Anjeet";
+        String str = " ANJEET BHARTI";
 
-        if(str .isEmpty()){
-            System.out.println("String is not empty");
-        }else{
-            System.out.println("String is empty");
-        }
-        System.out.println(str);
+        // Convert to UpperCase
+        String Upper = str.toUpperCase();
+        System.out.println("UpperCase:-" + Upper );
+
+        //Convert Lowercase
+
+        String Lower = str.toLowerCase();
+        System.out.println("UpperCase :- " + Lower);
     }
 }
