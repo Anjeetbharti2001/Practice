@@ -244,4 +244,21 @@ a{
     height:60px;
     border-radius: 0.25rem;
 }
+ .fa-heart {
+    opacity: 0.3;
+    margin-bottom: 2rem;
+ }
+ .fa-chromecast {
+    opacity:0.3 ;
+ }
+ .fa-chromecast:hover {
+    opacity: 0.7;
+ }
+ .fa-heart:hover{
+    opacity: 0.7;
+ }
+ .controls {
+    width:50%;
+ }
+ 
 
