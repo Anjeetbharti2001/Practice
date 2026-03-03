@@ -1,0 +1,18 @@
+/* .container{
+    background-color: yellow;
+} */
+ 
+div {
+    height:200px;
+    width:220px;
+    color: blue;
+    background-color: aqua;
+    border-radius: 3px solid red;
+}
+div {
+    padding-top: 30px;
+}
+.div2 {
+    padding-right: 220px;
+    padding-bottom: 12px;
+}
