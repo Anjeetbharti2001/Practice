@@ -258,7 +258,17 @@ a{
     opacity: 0.7;
  }
  .controls {
-    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
+ .fa-regular {
+
+ }
+ .who_are_you {
+    width:50px;
+    height:30px;
+ }
+
  
 
