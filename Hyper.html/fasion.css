@@ -255,19 +255,29 @@ a{
     opacity: 0.7;
  }
  .fa-heart:hover{
-    opacity: 0.7;
+    opacity: 0.1;
  }
  .controls {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
  }
- .fa-regular {
-
+ .controls i:hover {
+    opacity:0.7 ;
+    color: gold;
+ } 
+ .controls img:hover {
+    opacity:0.5;
+    color: #fff;
+    cursor: pointer;
  }
  .who_are_you {
     width:50px;
     height:30px;
+ }
+ .fa-volume-high {
+    color: #fff;
+   
  }
 
  
