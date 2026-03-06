@@ -1,11 +1,11 @@
 public class Today{
     public static void main(String args[]){
-        String str = "Anjeet";
-        
-        char first = str.charAt(0);
-        char last = str.charAt(str.length() - 1);
+        String str = " I am learning java";
 
-        System.out.println("character first letter:-" + first);
-        System.out.println("character last :- " + last);
+        if(str.contains("Anjeet")){
+            System.out.println("word exist");
+        }else{
+            System.out.println("word not exist");
+        }
     }
 }
