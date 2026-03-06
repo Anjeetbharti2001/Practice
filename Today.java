@@ -1,10 +1,11 @@
 public class Today{
     public static void main(String args[]){
-        String str1 = "anjeet";
-        // String str2 = "bharti";
-        // String str3 = "sarjun";
+        String str = "Anjeet";
 
-        String result = str1.substring(0,1) .toUpperCase() + str1.substring(1);
-        System.out.println(result);
+        char arr[] = str.toCharArray();
+
+        for(int i = 0; i<arr.length; i++){
+            System.out.println(arr[i]);
+        }
     }
 }
