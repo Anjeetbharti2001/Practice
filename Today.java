@@ -1,8 +1,10 @@
-import java.util.*;
 public class Today{
     public static void main(String args[]){
-        int arr[] = {3,5,6,7,8,9};
-        Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
+        String str1 = "anjeet";
+        // String str2 = "bharti";
+        // String str3 = "sarjun";
+
+        String result = str1.substring(0,1) .toUpperCase() + str1.substring(1);
+        System.out.println(result);
     }
 }
