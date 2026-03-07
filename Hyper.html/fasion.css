@@ -277,7 +277,9 @@ a{
  }
  .fa-volume-high {
     color: #fff;
-   
+ }
+ .slider {
+    size: 12px;
  }
 
  
