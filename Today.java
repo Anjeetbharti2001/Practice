@@ -1,8 +1,9 @@
 public class Today{
     public static void main(String args[]){
-        int a = 23;
-        int b = 24;
-        int sum = a + b;
-        System.out.println(sum);
+        String str = "Anjeet";
+
+        for(int i= str.length()-1; i>=0; i--){
+            System.out.println(str.charAt(i));
+        }
     }
 }
