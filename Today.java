@@ -1,8 +1,8 @@
 public class Today{
     public static void main(String args[]){
-        String str = "I love Anjeet ";
-
-        str = str.replace("0 ","self  ");
-        System.out.println(str);
+        int a = 23;
+        int b = 24;
+        int sum = a + b;
+        System.out.println(sum);
     }
 }
