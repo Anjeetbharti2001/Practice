@@ -1,9 +1,8 @@
-import java.util.Arrays;
-
+// Find the length of string in array
 public class Today{
     public static void main(String args[]){
-        int arr[] = {4,6,7,8,4,7,83,2,4};
-        Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
+        String str = "anjeet bharti";
+        System.out.println(str.length());
+
     }
 }
