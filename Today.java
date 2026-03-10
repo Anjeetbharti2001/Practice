@@ -1,12 +1,8 @@
-// check is the string of equal yes or not 
+import java.util.*;
 public class Today{
     public static void main(String args[]){
-        String str1 = "bharti";
-        String str2 = "Bharti";
-        if(str1.equals(str2)){
-            System.out.println("String is equal");
-        }else{
-            System.out.println("String is not equal");
-        }
+        int arr[] = {2,4,5,6,7,7};
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
