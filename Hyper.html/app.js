@@ -1,5 +1,9 @@
-// let password = prompt("Set your password");
-// let newPass = password.trim();
-// console.log(newPass);
+let  id= setInterval (() => {
+    console.log("Anjeet");
+}, 2000);
+console.log(id);
 
-let students = ["aman","Anjeet","bharti","Priya","prinka"];
+let id2 = setInterval(() =>{
+    console.log("hello world");
+}, 3000);
+console.log(id2);
