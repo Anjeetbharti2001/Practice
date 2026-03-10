@@ -1,9 +1,6 @@
-let  id= setInterval (() => {
-    console.log("Anjeet");
-}, 2000);
-console.log(id);
-
-let id2 = setInterval(() =>{
-    console.log("hello world");
-}, 3000);
-console.log(id2);
+const student = {
+    name : "anjeet ",
+    marks:95,
+    prop:this, 
+};
+console.log(student);
