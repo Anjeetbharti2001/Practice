@@ -1,6 +1,7 @@
-const student = {
-    name : "anjeet ",
-    marks:95,
-    prop:this, 
-};
-console.log(student);
+let id = setInterval(() => {
+    console.log("hello anjeet");
+}, 2000);
+
+setTimeout(() => {
+    clearInterval(id);
+}, 1000);
