@@ -1,6 +1,6 @@
 public class Today{
-    public static void main(String arsg[]){
-        String str = "anjeet";
-        System.out.println(str.toUpperCase());
+    public static void main(String args[]){
+        String str = "ANJEET BHARTI FROM BIHAR";
+        System.out.println(str.toLowerCase());
     }
 }
