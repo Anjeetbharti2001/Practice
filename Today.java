@@ -1,13 +1,11 @@
-// check of the string in any particular word exist yes or not 
 public class Today{
     public static void main(String args[]){
-        String str = "java is a programing language";
-        String word = "Anjeet";
+        String str = "Anjeet";
 
-        if(str.contains(word)){
-            System.out.println("Word exist");
-        }else{
-            System.out.println("word is not exist");
-        }
+        char first = str.charAt(0);
+        char last = str.charAt(str.length() - 1);
+
+        System.out.println("character:- " + first);
+        System.out.println("Character:- " + last);
     }
 }
