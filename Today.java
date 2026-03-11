@@ -1,11 +1,14 @@
 public class Today{
     public static void main(String args[]){
-        String str = "Anjeet";
+        String str = "Java Is Easy To Learn";
+        String [] words =str.split(" ");
 
-        char[] arr = str.toCharArray();
-        
-        for(int i = 0 ; i<arr.length; i++){
-            System.out.println(arr[i]);
+        for(int i = 0; i<words.length; i++){
+            String first = words[i].substring(0,1).toLowerCase();
+            String rest = words[i].substring(1);
+            words[i] = first + rest;
         }
+        String result = String.join(" ", words);
+        System.out.println(result);
     }
 }
