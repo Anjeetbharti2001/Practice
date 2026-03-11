@@ -1,9 +1,13 @@
+// check of the string in any particular word exist yes or not 
 public class Today{
-
-    public static boolean ispowerofTwo(int n){
-        return n > 0 && (n & (n-1)) == 0;
-    }
     public static void main(String args[]){
-      System.out.println(ispowerofTwo(16));
+        String str = "java is a programing language";
+        String word = "Anjeet";
+
+        if(str.contains(word)){
+            System.out.println("Word exist");
+        }else{
+            System.out.println("word is not exist");
+        }
     }
 }
