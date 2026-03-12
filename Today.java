@@ -1,8 +1,8 @@
 public class Today{
     public static void main(String args[]){
-        String str = "1a2b3c4";
+        String str = "1a2n3j4e5e6t";
 
-        for(int i = 0; i< str.length(); i++){
+        for(int i = 0; i<str.length(); i++){
             System.out.println(str.charAt(i));
         }
     }
