@@ -1,7 +1,8 @@
+// Find the odd number in Array
 public class Today{
     public static void main(String args[]){
-        int arr[] = {3,6,7,8,03,23,5};
-        int count = 0; 
+        int arr[] = {4,6,7,8,3,6};
+        int count = 0;
         for(int i = 0; i<arr.length; i++){
             if(arr[i] % 2 == 0){
                 count++;
