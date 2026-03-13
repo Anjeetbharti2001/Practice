@@ -1,8 +1,12 @@
-import java.util.*;
 public class Today{
+    static void printNum(int n){
+        if(n == 0){
+            return;
+        }
+        printNum(n - 1);
+        System.out.println(n);
+    }
     public static void main(String args[]){
-        int arr[] = {5,8,3,5,7,9,1,6,2};
-        Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
+      printNum(5);
     }
 }
