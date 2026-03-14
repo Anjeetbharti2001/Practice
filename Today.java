@@ -1,13 +1,8 @@
+import java.util.*;
 public class Today{
     public static void main(String args[]){
-        // count odd number in array
-        int arr[] = {3,5,7,8,9,9};
-        int count = 0; 
-        for(int i = 0; i<arr.length; i++){
-            if(arr[i] % 2 != 0){
-                count++;
-            }
-        }
-        System.out.println(count);
+        int arr[] = {4,8,93,6,1,2,8};
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
