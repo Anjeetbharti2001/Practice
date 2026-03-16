@@ -1,12 +1,19 @@
 public class Today{
     public static void main(String args[]){
-        int arr[] = {2,6,9,2,4,5};
-        int count = 0;
-        for(int i = 0; i<arr.length; i++){
-            if(arr[i] %2 == 0){
-                count++;
-            }
+        int arr[] = {4,10,1,2,6};
+        int start = 0;
+        int end = arr.length -1; 
+
+        while(start < end){
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
         }
-        System.out.println(count);
+        // print reversed array
+        for(int i = 0; i<arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
     }
 }
