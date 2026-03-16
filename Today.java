@@ -1,13 +1,8 @@
+import java.util.*;
 public class Today{
     public static void main(String args[]){
-        int arr[] = {3,6,9,3,6};
-        int sum = 0; 
-        // Loop to add all element 
-        for(int i = 0; i<arr.length; i++){
-            sum = sum + arr[i];
-        }
-        // Calculate average
-        double average = (double) sum/arr.length;
-        System.out.println("Avarage:-" + average);
+        int arr[] = {5,8,0,2,3,5,4};
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
