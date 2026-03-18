@@ -1,12 +1,12 @@
 public class Today{
     public static void main(String args[]){
-        int arr[] = {7,7,8,41,2};
-        int count = 0;
+        int arr[] = {5,3,5,6,9,2,4};
+        int sum = 0;
+
         for(int i = 0; i<arr.length; i++){
-            if(arr[i] %2 == 0){
-                count++;
-            }
+            sum = sum + arr[i];
         }
-        System.out.println(count);
+        double avg = (double) sum/arr.length;
+        System.out.println("Average :- " + avg);
     }
 }
