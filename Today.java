@@ -1,8 +1,13 @@
-import java.util.*;
 public class Today{
     public static void main(String args[]){
-        int arr[] = {4,9,6,7,2,3,5};
-        Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
+        int arr[] = {4,7,89,3,5,6};
+        int max = arr[0];
+
+        for(int i = 0; i<arr.length; i++){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        }
+        System.out.println(max);
     }
 }
