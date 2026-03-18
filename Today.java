@@ -1,13 +1,12 @@
 public class Today{
     public static void main(String args[]){
-        int arr[] = {4,7,89,3,5,6};
-        int max = arr[0];
-
+        int arr[] = {3,7,9,9,2,5};
+        int count = 0;
         for(int i = 0; i<arr.length; i++){
-            if(arr[i] > max){
-                max = arr[i];
+            if(arr[i] %2 != 0){
+                count++;
             }
         }
-        System.out.println(max);
+        System.out.println(count);
     }
 }
