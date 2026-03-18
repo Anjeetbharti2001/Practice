@@ -1,12 +1,24 @@
+import java.util.*;
 public class Today{
     public static void main(String args[]){
-        int arr[] = {5,3,5,6,9,2,4};
-        int sum = 0;
+        Scanner sc = new Scanner(System.in);
 
-        for(int i = 0; i<arr.length; i++){
+
+        System.out.println("Enter size:-");
+        int n = sc.nextInt();
+
+        
+        int arr[] = new int[n];
+
+        int sum = 0; 
+        System.out.println("enter element:-");
+        for(int i = 0; i< n ; i++){
+            System.out.println(".()");
+            arr[i] = sc.nextInt();
             sum = sum + arr[i];
         }
-        double avg = (double) sum/arr.length;
-        System.out.println("Average :- " + avg);
+        double avg = (double) sum/n;
+        System.out.println("average element:-" + avg);
+
     }
 }
