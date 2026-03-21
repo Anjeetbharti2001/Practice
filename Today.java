@@ -1,11 +1,18 @@
 public class Today{
     public static void main(String args[]){
-        String str1 = "Anjeet bharti";
-        String str2 = "Anjeet";
-        if(str1.equals(str2)){
-            System.out.println("String is equal");
-        }else{
-            System.out.println("String is not equal");
+        int arr[] = {2,5,6,7,8};
+        int start = 0;
+        int end = arr.length-1;
+        while(start < end){
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
+        }
+        //print reversed array
+        for(int i = 0; i<arr.length; i++){
+            System.out.print(arr[i] + " ");
         }
     }
 }
