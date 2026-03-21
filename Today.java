@@ -1,12 +1,11 @@
-// compare two string 
 public class Today{
     public static void main(String args[]){
-        String str = "Anjeet";
-        String str1 = "Bharti";
-        if(str.equals(str1)){
-            System.out.println("String is equals");
+        String str1 = "Anjeet bharti";
+        String str2 = "Anjeet";
+        if(str1.equals(str2)){
+            System.out.println("String is equal");
         }else{
-            System.out.println("String is not equals");
+            System.out.println("String is not equal");
         }
     }
 }
