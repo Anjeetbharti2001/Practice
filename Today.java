@@ -1,10 +1,13 @@
 public class Today{
+
+    static void printNum(int n){
+        if(n == 0){
+            return;
+        }
+        printNum(n - 1);
+        System.out.println(n);
+    }
     public static void main(String args[]){
-       String str = "2a5r7t8";
-
-       for(int i = 0; i<str.length(); i++){
-        System.out.print(str.charAt(i));
-       }
-
+        printNum(5);
     }
 }
