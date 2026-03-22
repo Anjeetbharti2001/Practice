@@ -1,12 +1,16 @@
-function one () {
-    return 1;
-}
-function two (){
-    return one() + one();
-}
-function three(){
-    let ans = two() + one();
-    console.log(ans);
-}
+let h1 = document.querySelector("h1");
+setTimeout(() => {
+    h1.style.color = "red";
+}, 1000);
 
-three();
+setTimeout(() =>{
+    h1.style.color = "brown";
+},2000);
+
+setTimeout(() => {
+    h1.style.color = "green";
+}, 3000);
+
+setTimeout(() =>{
+    h1.style.color = "blue";
+}, 2000);
