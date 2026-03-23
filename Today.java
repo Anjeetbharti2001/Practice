@@ -5,9 +5,9 @@ public class Today{
         // Subtraction
            int a = 8;
            int b = 2;
-           int sum = a - b;
-           System.out.println(sum);
         // Multiplication 
+         int multi = a *b;
+           System.out.println(multi);
         // Division 
         // Modulus 
         //Increment 
