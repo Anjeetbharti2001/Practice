@@ -1,9 +1,18 @@
 public class Today{
     public static void main(String args[]){
-        int a = 9;
-        int b = 12;
-
-        int sum = a + b;
-        System.out.println(sum);
+        // Arithmetic Operators
+        //addition 
+        // Subtraction
+           int a = 8;
+           int b = 2;
+           int sum = a - b;
+           System.out.println(sum);
+        // Multiplication 
+        // Division 
+        // Modulus 
+        //Increment 
+        // Decrement
+      
+        
     }
 }
