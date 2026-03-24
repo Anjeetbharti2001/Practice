@@ -1,12 +1,6 @@
 public class Today{
-    static int factorial(int n){
-        if( n == 0 || n == 1){
-            return 1;
-        }
-        return n*factorial(n - 1);
-        
-    }
     public static void main(String args[]){
-        System.out.println(factorial(5));
+        String str = "anjeet bharti";
+        System.out.println(str.toUpperCase());
     }
 }
