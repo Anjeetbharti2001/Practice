@@ -1,13 +1,13 @@
 public class Today{
-    // print number n to 1.
-    static void printRev(int n){
-        if(n == 0){
-            return;
+    // sum first number 
+    static int sum (int n){
+        if(n == 1){
+            return 1;
         }
-        System.out.print(n + " ");
-        printRev(n - 1);
+        return n + sum(n - 1);
     }
     public static void main(String args[]){
-           printRev(5);
+        System.out.println(sum(5));
+        
     }
 }
