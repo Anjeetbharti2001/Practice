@@ -1,20 +1,11 @@
-// let h1 = document.querySelector("h1");
-// setTimeout(() => {
-//     h1.style.color = "red";
-// }, 1000);
+let url = "http://universities.hipolabs.com/search?name=";
+let country = "nepal";
 
-// setTimeout(() =>{
-//     h1.style.color = "brown";
-// },2000);
-
-// setTimeout(() => {
-//     h1.style.color = "green";
-// }, 3000);
-
-// setTimeout(() =>{
-//     h1.style.color = "blue";
-// }, 2000);
-
-let url = "https://catfact.ninja/fact";
-
-fetch();
+async function getColleges(){
+    try {
+       let res = await axios.get(url + country);
+       console.log(res);
+    } catch (e) {
+        console.log("error : " , e);
+    }
+}
