@@ -1,20 +1,8 @@
+import java.util.*;
 public class Today{
     public static void main(String args[]){
-        int arr[] = {4,7,8,8,9,0};
-        int start = 0;
-        int end = arr.length -1;
-
-        while(start <end){
-            int temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
-
-            start++;
-            end--;
-        }
-        //print reversed
-        for(int i = 0; i<arr.length; i++){
-            System.out.print(arr[i] + " ");
-        }
+        int arr[] = {7,4,2,6,8,9};
+        Arrays.sort(arr);
+        System.out.print(Arrays.toString(arr));
     }
 }
