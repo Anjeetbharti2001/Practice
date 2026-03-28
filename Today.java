@@ -1,6 +1,11 @@
 public class Today{
     public static void main(String args[]){
-        String str = "anjeet bharti";
-        System.out.print(str.toUpperCase());
+        String str1 = "ANJEET";
+        String str2 = "BHARTI";
+        if(str1.equals(str2)){
+            System.out.println("String is equal ");
+        }else{
+            System.out.println("String is not equal");
+        }
     }
 }
