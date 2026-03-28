@@ -1,17 +1,16 @@
 public class Today{
     // recursive function
-    static void reverse(String str){
-        // base condition
-        if(str.length() == 0 ){
-            return;
+    static int countDigits(int n){
+        // base condition 
+        if(n == 0){
+            return 0;
         }
-        //recursive call 
-        reverse(str.substring(1));
-        // print first character at last 
-        System.out.print(str.charAt(0)+ " ");
+        // recursive call 
+        return 1 + countDigits(n/10);
     }
     public static void main(String args[]){
-           String str = "hello";
-           reverse(str);
+          int num = 12345;
+          int result = countDigits(num);
+          System.out.println("number of digit = " + result);
     }
 }
