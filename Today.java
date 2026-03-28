@@ -1,6 +1,17 @@
 public class Today{
+    // recursive function
+    static void reverse(String str){
+        // base condition
+        if(str.length() == 0 ){
+            return;
+        }
+        //recursive call 
+        reverse(str.substring(1));
+        // print first character at last 
+        System.out.print(str.charAt(0)+ " ");
+    }
     public static void main(String args[]){
-        int arr[] = {3,5,6,7,8};
-        System.out.print(arr[0] + " ");
+           String str = "hello";
+           reverse(str);
     }
 }
