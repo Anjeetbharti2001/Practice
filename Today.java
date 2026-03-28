@@ -1,16 +1,10 @@
 public class Today{
-    // recursive function
-    static int countDigits(int n){
-        // base condition 
-        if(n == 0){
-            return 0;
-        }
-        // recursive call 
-        return 1 + countDigits(n/10);
-    }
     public static void main(String args[]){
-          int num = 12345;
-          int result = countDigits(num);
-          System.out.println("number of digit = " + result);
+        int arr[] = {4,6,7,8,9,9,1};
+        int sum = 0;
+        for(int i = 0; i<arr.length; i++){
+            sum += arr[i];
+        }
+        System.out.println(sum);
     }
 }
