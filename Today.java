@@ -1,12 +1,11 @@
 public class Today{
-     static void printRev(int n){
-            if(n == 0){
-                return ;
-            }
-            System.out.print(n);
-            printRev(n-1);
+    static int sum (int n){
+        if(n == 1){
+            return 1;
         }
+        return n + sum(n -1);
+    }
     public static void main(String args[]){
-       printRev(8);
+        System.out.println(sum(5));
     }
 }
