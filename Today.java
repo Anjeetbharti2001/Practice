@@ -1,23 +1,14 @@
+//power of number x^n
 public class Today{
-    static boolean isPalindrome(String str){
-        int start = 0;
-        int end = str.length() -1;
-
-        while(start < end){
-            if(str.charAt(start) != str.charAt(end)){
-                return false;
-            }
-            start++;
-            end--;
+    static int power(int x, int n){
+        if(n == 0){
+            return 1; // base case
         }
-        return true;
+        return x * power(x, n-1);
     }
     public static void main(String args[]){
-        String str = "JAHAJ";
-        if(isPalindrome(str)){
-            System.out.println("yes palindrom");
-        }else{
-            System.out.println("No, not palindrome ");
-        }
+        int x = 2;
+        int n = 3;
+        System.out.println(power(x,n));
     }
 }
