@@ -1,17 +1,23 @@
-// Reverse a string using recursion
 public class Today{
-    static void reverse(String str){
-        // Base condition
-        if(str.length() == 0){
-            return;
+    static boolean isPalindrome(String str){
+        int start = 0;
+        int end = str.length() -1;
+
+        while(start < end){
+            if(str.charAt(start) != str.charAt(end)){
+                return false;
+            }
+            start++;
+            end--;
         }
-        // Recursive call 
-        reverse(str.substring(1));
-        // Print first character at last
-        System.out.print(str.charAt(0 ));
+        return true;
     }
     public static void main(String args[]){
-        String str = "ANJEET";
-        reverse(str);
+        String str = "JAHAJ";
+        if(isPalindrome(str)){
+            System.out.println("yes palindrom");
+        }else{
+            System.out.println("No, not palindrome ");
+        }
     }
 }
