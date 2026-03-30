@@ -1,23 +1,14 @@
 public class Today{
-    static boolean isPalindrome(String str){
-         int start = 0;
-         int end = str.length()-1;
-
-         while(start < end){
-            if(str.charAt(start) != str.charAt(end)){
-                return false;
-            }
-            start++;
-            end--;
-         }
-         return true;
+    static int fib(int n){
+        if(n == 0 ) return 0;
+        if(n == 1) return 1;
+        
+        return fib(n-1) + fib(n-2);
     }
     public static void main(String args[]){
-         String str = "madam";
-         if(isPalindrome(str)){
-            System.out.println("yes, palindrome");
-         }else{
-            System.out.println("no, not palindrime");
-         }
+        int n = 5;
+        for(int i = 0; i<n; i++){
+            System.out.print(fib(i) + " ");
+        }
     }
 }
