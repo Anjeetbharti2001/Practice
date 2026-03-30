@@ -1,14 +1,23 @@
 public class Today{
-    //recursive function 
-    static void reverse(String str){
-        if(str.length() == 0){
-            return ;
-        }
-        reverse(str.substring(1));
-        System.out.println(str.charAt(0));
+    static boolean isPalindrome(String str){
+         int start = 0;
+         int end = str.length()-1;
+
+         while(start < end){
+            if(str.charAt(start) != str.charAt(end)){
+                return false;
+            }
+            start++;
+            end--;
+         }
+         return true;
     }
     public static void main(String args[]){
-         String str = "ANJEET BHARTI";
-         reverse(str);
+         String str = "madam";
+         if(isPalindrome(str)){
+            System.out.println("yes, palindrome");
+         }else{
+            System.out.println("no, not palindrime");
+         }
     }
 }
