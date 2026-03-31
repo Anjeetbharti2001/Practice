@@ -1,7 +1,8 @@
 public class Today{
     public static void main(String args[]){
-        String str = "Anjeet";
-        int count = str.length();
-        System.out.println("Total character :-" + count);
+        String str = "java";
+        for(int i = 0; i<str.length(); i++){
+            System.out.println(str.charAt(i));
+        }
     }
 }
