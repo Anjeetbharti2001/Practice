@@ -1,24 +1,13 @@
 public class Today{
-
-    static boolean isPalindrome(String str){
-        int start = 0;
-        int end = str.length() -1;
-
-        while(start < end){
-            if(str.charAt(start) != str.charAt(end)){
-                return false;
-            }
-            start++;
-            end--;
+    static int power(int x, int n){
+        if(n == 0){
+            return 1;
         }
-        return true;
+        return x * power(x,n-1);
     }
     public static void main(String args[]){
-        String str = "jahaj";
-        if(isPalindrome(str)){
-            System.out.println("YES this word is palindrome");
-        }else{
-            System.out.println("Not this word is not palindrome");
-        }
+        int x = 2;
+        int n = 6;
+        System.out.println(power(x,n));
     }
 }
