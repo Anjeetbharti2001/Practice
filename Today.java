@@ -1,15 +1,14 @@
 public class Today{
-    static int fib(int n){
-        if(n == 0) return 0;
-        if(n == 1) return 1;
-
-        return fib(n - 1) + fib(n - 2);
+    static int CountDigit(int n){
+        if(n == 0){
+            return 0;
+        }
+        return 1 + CountDigit(n/10);
     }
     public static void main(String args[]){
-        int n = 5; 
+        int num = 1234;
+        int result = CountDigit(num);
+        System.out.println("number of digit =" + result);
 
-        for(int i = 0 ; i< n ; i++){
-            System.out.print(fib(i) + " ");
-        }
     }
 }
