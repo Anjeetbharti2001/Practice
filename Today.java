@@ -1,14 +1,24 @@
 public class Today{
-    static int CountDigit(int n){
-        if(n == 0){
-            return 0;
+
+    static boolean isPalindrome(String str){
+        int start = 0;
+        int end = str.length() -1;
+
+        while(start < end){
+            if(str.charAt(start) != str.charAt(end)){
+                return false;
+            }
+            start++;
+            end--;
         }
-        return 1 + CountDigit(n/10);
+        return true;
     }
     public static void main(String args[]){
-        int num = 1234;
-        int result = CountDigit(num);
-        System.out.println("number of digit =" + result);
-
+        String str = "jahaj";
+        if(isPalindrome(str)){
+            System.out.println("YES this word is palindrome");
+        }else{
+            System.out.println("Not this word is not palindrome");
+        }
     }
 }
