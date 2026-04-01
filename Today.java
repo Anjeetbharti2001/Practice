@@ -1,13 +1,20 @@
 public class Today{
-    static int power(int x, int n){
-        if(n == 0){
-            return 1;
-        }
-        return x * power(x,n-1);
-    }
     public static void main(String args[]){
-        int x = 2;
-        int n = 6;
-        System.out.println(power(x,n));
+        int arr[] = {2,6,8,9,5};
+        int start = 0;
+        int end  = arr.length -1;
+
+        while(start < end){
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+
+            start++;
+            end--;
+        }
+        // reversed arrays 
+        for(int i = 0; i<arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
     }
 }
