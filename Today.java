@@ -1,11 +1,15 @@
+import java.util.*;
 public class Today{
     public static void main(String args[]){
-        int arr[] = {1,5,8,90,34,5};
-        int sum = arr[0];
+        Stack<Integer> s = new Stack<>();
 
-        for(int i = 0; i<arr.length; i++){
-            sum += arr[i];
-        }
-        System.out.println(sum);
+        s.push(10);
+        s.push(20);
+        s.push(30);
+
+        System.out.println("Top :" + s.peek()); //30
+
+        s.pop();
+        System.out.println("after pop :" + s.peek()); // 20
     }
 }
