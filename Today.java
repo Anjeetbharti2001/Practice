@@ -1,14 +1,12 @@
-import java.util.*;
 public class Today{
     public static void main(String args[]){
-        Stack<Character> s = new Stack<>();
-         String str = "Anjeet";
+        String str = "Anjeet";
+        String str2 = "Anjeetbharti";
 
-        for(char c : str.toCharArray()){
-            s.push(c);
-        }
-        while(!s.isEmpty()){
-            System.out.print(s.pop());
+        if(str.equals(str2)){
+            System.out.println("String is equals");
+        }else{
+            System.out.println("String is not equal");
         }
     }
 }
