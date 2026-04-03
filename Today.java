@@ -1,10 +1,7 @@
 public class Today{
     public static void main(String args[]){
-        String str = " ";
-        if(str.isEmpty()){
-            System.out.println("String is empty");
-        }else{
-            System.out.println("String is not empty");
-        }
+        int arr[] = {4,5,6,7,8,8};
+
+        System.out.println(arr[3]);
     }
 }
