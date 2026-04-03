@@ -1,7 +1,10 @@
 public class Today{
     public static void main(String args[]){
-        String str = "Anjeet bharti";
-
-       System.out.println(str.length());
+        String str = " ";
+        if(str.isEmpty()){
+            System.out.println("String is empty");
+        }else{
+            System.out.println("String is not empty");
+        }
     }
 }
