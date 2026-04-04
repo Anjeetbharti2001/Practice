@@ -1,6 +1,9 @@
 public class Today{
     public static void main(String args[]){
-        int arr[] = {4,5,7,8};
-        System.out.println(arr[0]);
+        int arr[] = {5,6,7,8,2};
+        
+        for(int i = 0; i<arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
     }
 }
