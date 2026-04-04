@@ -1,6 +1,6 @@
 public class Today{
     public static void main(String args[]){
-        String str = "Anjeet bharti";
-        System.out.println(str.length());
+        int arr[] = {4,5,7,8};
+        System.out.println(arr[0]);
     }
 }
