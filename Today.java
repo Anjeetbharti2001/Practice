@@ -1,23 +1,13 @@
 public class Today{
-    static boolean isPalindrome(String str){
-        int start = 0;
-        int end = str.length() -1;
-
-        while(start < end ){
-            if(str.charAt(start) != str.charAt(end)){
-                return false;
-            }
-            start++;
-            end--;
+    static void reverse(String str){
+        if(str.length() == 0){
+            return;
         }
-        return true;
+        reverse(str.substring(1));
+        System.out.println(str.charAt(0));
     }
     public static void main(String args[]){
-        String str = "madam";
-        if(isPalindrome(str)){
-            System.out.println("yes, palindrome");
-        }else{
-            System.out.println("this is not palindrome");
-        }
+           String str = "hello ";
+           reverse(str);
     }
 }
