@@ -1,14 +1,13 @@
 public class Today{
-    static int fib(int n){
-        if(n == 0) return 0;
-        if(n == 1) return 1;
-
-        return fib(n-1) + fib(n-2);
+    static int power(int x, int n){
+        if(n == 0){
+            return 1; // base case
+        }
+        return x*power(x, n-1);
     }
     public static void main(String args[]){
-        int n = 5; 
-        for(int i = 0; i<n ; i++){
-            System.out.print(fib(i) + " ");
-        }
+        int x = 2; 
+        int n = 3; 
+        System.out.println(power(x,n));
     }
 }
