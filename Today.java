@@ -1,13 +1,14 @@
 public class Today{
-    public static void main(String args[]){
-        int arr[] = {4,6,8,9,2};
-        int min = arr[0];
+    static int fib(int n){
+        if(n == 0) return 0;
+        if(n == 1) return 1;
 
-        for(int i = 0; i<arr.length; i++){
-            if(arr[i] < min){
-                min = arr[i];
-            }
+        return fib(n-1) + fib(n-2);
+    }
+    public static void main(String args[]){
+        int n = 5; 
+        for(int i = 0; i<n ; i++){
+            System.out.print(fib(i) + " ");
         }
-        System.out.println(min);
     }
 }
