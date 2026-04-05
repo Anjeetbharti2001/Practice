@@ -1,13 +1,23 @@
 public class Today{
-    static int power(int x, int n){
-        if(n == 0){
-            return 1; // base case
+    static boolean isPalindrome(String str){
+        int start = 0;
+        int end = str.length() -1;
+
+        while(start < end ){
+            if(str.charAt(start) != str.charAt(end)){
+                return false;
+            }
+            start++;
+            end--;
         }
-        return x*power(x, n-1);
+        return true;
     }
     public static void main(String args[]){
-        int x = 2; 
-        int n = 3; 
-        System.out.println(power(x,n));
+        String str = "madam";
+        if(isPalindrome(str)){
+            System.out.println("yes, palindrome");
+        }else{
+            System.out.println("this is not palindrome");
+        }
     }
 }
