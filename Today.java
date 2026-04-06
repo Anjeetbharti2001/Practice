@@ -1,12 +1,11 @@
 public class Today{
-    // Sum of n natural number in java
-    static int sum(int n){
-        if(n == 0){
-            return 0;
-        }
-        return n + sum(n - 1);
+    static void print(int n){
+        if(n == 0) return ;
+
+        print(n - 1);
+        System.out.println(n + " ");
     }
     public static void main(String args[]){
-       System.out.println(sum(7));
+       print(5);
     }
 }
