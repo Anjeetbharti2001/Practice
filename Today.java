@@ -1,10 +1,14 @@
 public class Today{
+    // Find out of the largest element i array
     public static void main(String args[]){
+        int arr[] = {3,6,7,8,33,2};
+        int max = arr[0];
 
-        int a = 9;
-        int b = 2;
-
-        int sum = a % b;
-         System.out.println(sum);
+        for(int i = 0; i<arr.length; i++){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        }
+        System.out.println("largest element of arrays:-"+ max);
     }
 }
