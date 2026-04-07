@@ -1,14 +1,13 @@
 public class Today{
-    
     public static void main(String args[]){
-        int arr[] = {3,5,8,9,0,3};
-        int count = 0;
+        int arr[] ={3,5,7,8,9,9};
+        int count = 0; 
 
-        for(int i = 0; i<arr.length; i++){
-            if(arr[i] %2 == 0 ){
+        for(int i = 0 ; i<arr.length; i++){
+            if(arr[i] % 2 !=0){
                 count++;
             }
         }
-        System.out.println("even number in arrays element:-" + count);
+        System.out.println("odd number count in arrays element:- " + count);
     }
 }
