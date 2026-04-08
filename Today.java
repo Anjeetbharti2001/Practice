@@ -1,14 +1,12 @@
 public class Today{
-    // Power of n number
-    static int power(int x, int n){
+    static void printRev(int n){
         if(n == 0){
-            return 1;
+            return ;
         }
-        return x *power(x, n-1);
+        System.out.println(n);
+        printRev(n-1);
     }
-    public static void  main(String args[]){
-        int x = 2;
-        int n = 8;
-        System.out.println(power(2,8));
+    public static void main(String args[]){
+        printRev(7);
     }
 }
