@@ -1,8 +1,14 @@
-import java.util.*;
 public class Today{
-    public static void main(String args[]){
-        int arr[] = {3,8,4,9,1,3,7,3};
-        Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
+    // Power of n number
+    static int power(int x, int n){
+        if(n == 0){
+            return 1;
+        }
+        return x *power(x, n-1);
+    }
+    public static void  main(String args[]){
+        int x = 2;
+        int n = 8;
+        System.out.println(power(2,8));
     }
 }
