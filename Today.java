@@ -1,11 +1,21 @@
 public class Today{
-    static int factorial(int n){
-        if(n == 0 || n == 1){
-            return 1;
-        }
-        return n * factorial(n -1);
-    }
     public static void main(String args[]){
-        System.out.println(factorial(5));
+        int arr[] = {5,6,7,8,9};
+        int start = 0;
+        int end = arr.length-1;
+
+        while(start < end){
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+
+
+            start++;
+            end--;
+        }
+        //reversed arrays 
+        for(int i = 0; i<arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
     }
 }
