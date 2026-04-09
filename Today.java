@@ -1,13 +1,13 @@
 public class Today{
+    static int power(int x, int n){
+        if(n == 0){
+            return 1;
+        }
+        return x* power(x, n-1);
+    }
     public static void main(String args[]){
-          int arr[] = {3,5,6,7,8};
-         int  count = 0;
-
-          for(int i = 0; i<arr.length; i++){
-             if(arr[i] % 2 !=0){
-                count++;
-             }
-          }
-          System.out.println(count);
+        int x = 2;
+        int n = 4;
+        System.out.println(power(x,n));
     }
 }
