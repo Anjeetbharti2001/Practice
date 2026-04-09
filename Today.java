@@ -1,14 +1,15 @@
 public class Today{
-    static int fib(int n){
-        if(n == 0) return 0;
-        if(n == 1) return 1;
+    static void reverse(String str){
+        if(str.length()== 0){
+            return;
+        }
 
-        return fib(n - 1) + fib(n -2);
+        reverse(str.substring(1));
+        System.out.print(str.charAt(0));
     }
-    public static void main(String args[]){
-         int n = 8;
-         for(int i = 0; i<n; i++){
-            System.out.print(fib(i) + " ");
-         }
+
+    public static void  main(String args[]){
+        String str = "Anjeet";
+        reverse(str);
     }
 }
