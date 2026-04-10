@@ -1,15 +1,14 @@
+import java.util.Stack;
 public class Today{
-    static void reverse(String str){
-        if(str.length()== 0){
-            return;
-        }
+    public static void main(String args[]){
+        Stack<Integer> st = new Stack<>();
 
-        reverse(str.substring(1));
-        System.out.print(str.charAt(0));
-    }
+        st.push(10);
+        st.push(20);
+        st.push(30);
 
-    public static void  main(String args[]){
-        String str = "Anjeet";
-        reverse(str);
+        System.out.println(st);
+        System.out.println(st.pop());
+        System.out.println(st.peek());
     }
 }
