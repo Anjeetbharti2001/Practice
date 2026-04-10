@@ -1,14 +1,16 @@
-import java.util.Stack;
+import java.util.*;
 public class Today{
     public static void main(String args[]){
-        Stack<Integer> st = new Stack<>();
+        // reverse a string using stack 
+        String str = "hello";
+        Stack<Character> st = new Stack<>();
 
-        st.push(10);
-        st.push(20);
-        st.push(30);
+        for(char ch : str.toCharArray()){
+            st.push(ch);
+        }
 
-        System.out.println(st);
-        System.out.println(st.pop());
-        System.out.println(st.peek());
+        while(!st.isEmpty()){
+            System.out.println(st.pop());
+        }
     }
 }
