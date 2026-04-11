@@ -1,15 +1,14 @@
 import java.util.*;
-
 public class Today{
     public static void main(String args[]){
-        Stack<Integer> st = new Stack<>();
+        String str = "Anjeet";
+        Stack<Character> st = new Stack<>();
 
-        st.push(10);
-        st.push(20);
-        st.push(30);
-
-        System.out.println(st);
-        System.out.println(st.pop());
-        System.out.println(st.peek());
+        for(char ch : str.toCharArray()){
+            st.push(ch);
+        }
+        while(!st.isEmpty()){
+            System.out.println(st.pop());
+        }
     }
 }
