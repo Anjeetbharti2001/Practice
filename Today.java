@@ -1,14 +1,21 @@
-import java.util.*;
-public class Today{
-    public static void main(String args[]){
-        String str = "Anjeet";
-        Stack<Character> st = new Stack<>();
+import java.util.Stack;
 
-        for(char ch : str.toCharArray()){
-            st.push(ch);
+public class Today{
+    public static boolean isValid(String s){
+       Stack<Character>st = new Stack<>();
+        for(char ch : s.toCharArray()){
+            if(ch == '('){
+                if(st.isEmpty()) return false;
+                st.pop();
+            }
         }
-        while(!st.isEmpty()){
-            System.out.println(st.pop());
-        }
+        return st.isEmpty();
+    }
+
+   
+
+       
+    public static void main(String args[]){
+        System.out.println(isValid("()()"));
     }
 }
