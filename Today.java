@@ -1,21 +1,18 @@
-import java.util.Stack;
-
+//find Maximum Element in Stack
+import java.util.*;
 public class Today{
-    public static boolean isValid(String s){
-       Stack<Character>st = new Stack<>();
-        for(char ch : s.toCharArray()){
-            if(ch == '('){
-                if(st.isEmpty()) return false;
-                st.pop();
-            }
-        }
-        return st.isEmpty();
-    }
-
-   
-
-       
     public static void main(String args[]){
-        System.out.println(isValid("()()"));
+        Stack<Integer> st = new Stack<>();
+        st.push(5);
+        st.push(10);
+        st.push(3);
+
+        int max = Integer.MIN_VALUE;
+
+        while(!st.isEmpty()){
+            int val = st.pop();
+            if(val > max ) max = val;
+        }
+        System.out.println("max :" + max);
     }
 }
