@@ -1,17 +1,13 @@
-import java.util.*;
 public class Today{
     public static void main(String args[]){
-        Stack<Integer> st = new Stack<>();
-        st.push(5);
-        st.push(10);
-        st.push(3);
+        int arr[] = {4,6,7,8,9,4};
+        int count = 0;
 
-        int max = Integer. MIN_VALUE;
-
-        while(!st.isEmpty()){
-            int val = st.pop();
-            if(val > max) max = val;
+        for(int i = 0; i<arr.length; i++){
+            if(arr[i] %2 == 0 ){
+                count++;
+            }
         }
-        System.out.print("max : " + max);
+        System.out.println(count);
     }
 }
