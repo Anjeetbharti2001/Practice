@@ -1,32 +1,29 @@
 // public class Today{
 //     public static void main(String args[]){
-//         int arr[] = {55,65,75,56,78,78,90};
-//         int i;
-//         modify(marks);
-
-//         for(i = 0; i<= marks.length -1; i++);
-//         System.out.println(marks[i] + " ");
+//         int [] p;
+//         p = func();
+//         for(int i = 0; i<=p.length -1; i++){
+//             System.out.println(p[i] + " ");
+//         }
+//         static int[]func()
 //     }
-//     static void modify(int[]m)
-//     int i ;
-//     for(i = 0; i<= m.length- 1; i++)
-//         m[i] = m[i]*2;
+//     int []arr= {10,20,30,40,50};
+//     return arr;
 // }
+
 
 public class Today {
     public static void main(String args[]) {
-        int arr[] = {55,65,75,56,78,78,90};
+        int[] p;
+        p = func();
 
-        modify(arr);
-
-        for(int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+        for(int i = 0; i < p.length; i++) {
+            System.out.print(p[i] + " ");
         }
     }
 
-    static void modify(int[] m) {
-        for(int i = 0; i < m.length; i++) {
-            m[i] = m[i] * 2;
-        }
+    static int[] func() {
+        int[] arr = {10, 20, 30, 40, 50};
+        return arr;
     }
 }
