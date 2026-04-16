@@ -1,14 +1,10 @@
-import java.util.*;
-
-public class Today {
-    public static void main(String args[]) {
-        Stack<Integer> st = new Stack<>();
-        st.push(1);
-        st.push(2);
-        Stack<Integer> st2 = new Stack<>();
-        for (int x : st) {
-            st2.push(x);
+public class Today{
+    public static void main(String args[]){
+        int arr[] = {2,4,6,7};
+        int sum = 0;
+        for(int i = 0; i<arr.length; i++){
+            sum += arr[i];
         }
-        System.out.println(st2);
+        System.out.print(sum);
     }
 }
