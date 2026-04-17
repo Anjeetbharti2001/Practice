@@ -1,6 +1,7 @@
 public class Today{
     public static void main(String args[]){
-        String name = "ANJEET BHARTI FROM BIHAR";
-        System.out.println("MY NAME IS:- " + name);
+        System.out.println(3);
+        System.out.println(358);
+        System.out.println(50000);
     }
 }
