@@ -1,8 +1,10 @@
 public class Today{
     public static void main(String args[]){
-      int a = 40;
-      int b = 50;
-      int c = 10;
-      System.out.println(a + b + c);
+        int arr[] = {3,6,8,9};
+        int sum = 0;
+        for(int i = 0; i<arr.length; i++){
+           sum += arr[i];
+        }
+         System.out.println("Total sum of arrays element :-" + sum );
     }
 }
