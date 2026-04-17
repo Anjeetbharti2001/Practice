@@ -1,6 +1,7 @@
 public class Today{
     public static void main(String args[]){
-        String name = "Anjeet";
-        System.out.println(name);
+        String firstname = "Anjeet";
+        String lastname = "BHARTI";
+        System.out.println(firstname + "  "  + lastname );
     }
 }
