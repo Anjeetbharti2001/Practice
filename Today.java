@@ -1,16 +1,12 @@
 import java.util.*;
 public class Today{
   public static void main(String args[]){
-    Stack<Integer> q = new Stack<>();
+    Queue <Integer> q = new LinkedList<>();
 
-    if(q.isEmpty()){
-      System.out.println("Queue is Empty");
-    }
-    q.add(5);
-    q.add(10);
+    q.add(1);
+    q.add(2);
+    q.add(3);
 
-    if(!q.isEmpty()){
-      System.out.println("Queue is not empty");
-    }
+    System.out.println("Size of queue : " + q.size());
   }
 }
