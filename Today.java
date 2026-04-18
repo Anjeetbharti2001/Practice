@@ -1,20 +1,18 @@
 import java.util.*;
-
 public class Today{
   public static void main(String args[]){
     Queue<Integer> q = new LinkedList<>();
 
-    // Enqueue
-    q.add(10);
-    q.add(20);
-    q.add(30);
+    Scanner sc = new Scanner(System.in);
 
-    System.out.println("Queue :-" +  q);
-    // Dequeue
-    q.remove();
-    System.out.println("After removing : " + q);
+    System.out.println("Enter 5 elements:-");
+    for(int i = 0; i< 5 ; i++){
+      q.add(sc.nextInt());
+    }
 
-    // peek
-    System.out.println("Front element :-" + q.peek());
+    System.out.println("Queue elements:");
+    for(int x : q){
+      System.out.println(x + " ");
+    }
   }
 }
