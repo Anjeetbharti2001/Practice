@@ -1,18 +1,16 @@
 import java.util.*;
 public class Today{
   public static void main(String args[]){
-    Queue<Integer> q = new LinkedList<>();
+    Stack<Integer> q = new Stack<>();
 
-    Scanner sc = new Scanner(System.in);
-
-    System.out.println("Enter 5 elements:-");
-    for(int i = 0; i< 5 ; i++){
-      q.add(sc.nextInt());
+    if(q.isEmpty()){
+      System.out.println("Queue is Empty");
     }
+    q.add(5);
+    q.add(10);
 
-    System.out.println("Queue elements:");
-    for(int x : q){
-      System.out.println(x + " ");
+    if(!q.isEmpty()){
+      System.out.println("Queue is not empty");
     }
   }
 }
