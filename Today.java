@@ -1,11 +1,9 @@
 public class Today{
   public static void main(String args[]){
-    int x = 3;
-    int y = 5;
-    int z = 6;
-    
-    int sum = x + y + z;
-    System.out.println(sum);
+    int minutesperhour = 60;
 
+    int minutes = 60;
+    System.out.println(minutesperhour);
+    System.out.println(minutes);
   }
 }
