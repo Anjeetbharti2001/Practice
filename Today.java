@@ -1,13 +1,18 @@
 public class Today{
   public static void main(String args[]){
-    int arr[] = {8,4,5,6,7,8};
-    int max = arr[0];
+    int arr[] = {4,8,9,3,5,47,5,3};
+    int start = 0; 
+    int end = arr.length -1;
 
-    for(int i = 0; i<arr.length; i++){
-      if(arr[i] > max){
-        max = arr[i];
-      }
+    while( start < end ){
+       int temp = arr[start];
+       arr[start] = arr[end];
+       arr[end] = temp;
+
+       start++;
+       end--;
+
+       System.out.println(arr[0] + " ");
     }
-    System.out.println(max);
   }
 }
