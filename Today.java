@@ -1,10 +1,11 @@
 public class Today{
   public static void main(String args[]){
-    int length = 50;
-    int width = 5;
-    int Area = length*width;
-    System.out.println("Total of length : - " + length);
-    System.out.println("Total of Width : - " + width);
-    System.out.println("Total of Area :-" + Area);
+    int arr[] = {3,5,6,7,7,8,9};
+    int sum = 0;
+
+    for(int i = 0; i<arr.length; i++){
+      sum += arr[i];
+    }
+    System.out.println("Total sum of arrays :-" + sum);
   }
 }
