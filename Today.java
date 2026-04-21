@@ -1,16 +1,18 @@
 import java.util.*;
+
 public class Today{
     public static void main(String args[]){
-        String str = "Anjeet";
-        Stack<Character> s = new Stack<>();
+        int arr[] = {4,5,2,10};
+        Stack<Integer> s = new Stack<>();
 
-        for(char ch : str.toCharArray())
-            s.push(ch);
-
-        String rev = "";
-        while(!s.isEmpty())
-            rev += s.pop();
-
-        System.out.println("Reversed : " + rev);
+        for(int i = 0; i<arr.length; i++){
+            while(!s.isEmpty() && s.peek() <arr[i]){
+                System.out.println(s.pop() + " -> " + arr[i]);
+            }
+            s.push(arr[i]);
+        }
+        while(!s.isEmpty()){
+            System.out.println(s.pop() + " -> -1");
+        }
     }
 }
