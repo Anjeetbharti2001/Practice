@@ -1,19 +1,20 @@
+import java.util.*;
+
 public class Today{
-  public static void main(String args[]){
-    int arr[] = {4,8,9,3,5,47,5,3};
-    int start = 0; 
-    int end = arr.length -1;
+    public static void main(String args[]){
+        Stack<Integer> s = new Stack<>();
 
-    while( start < end ){
-       int temp = arr[start];
-       arr[start] = arr[end];
-       arr[end] = temp;
+        // push 
+        s.push(10);
+        s.push(20);
+        s.push(30);
 
-       start++;
-       end--;
+        // Peek
+        System.out.println("Top element :-" + s.peek());
+
+        // Pop
+        System.out.println("Removed :-" + s.pop());
+
+        System.out.println("Stack:-" + s);
     }
-    for(int i = 0; i<arr.length; i++){
-      System.out.print(arr[i] + " ");
-    }
-  }
 }
