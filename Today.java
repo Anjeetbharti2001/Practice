@@ -1,18 +1,14 @@
-import java.util.*;
-
 public class Today{
+    static int CountDigits(int n){
+        if(n == 0){
+            return 0;
+        }
+        //recursive call
+        return 1 + CountDigits(n/10);
+    }
     public static void main(String args[]){
-        int arr[] = {4,5,2,10};
-        Stack<Integer> s = new Stack<>();
-
-        for(int i = 0; i<arr.length; i++){
-            while(!s.isEmpty() && s.peek() <arr[i]){
-                System.out.println(s.pop() + " -> " + arr[i]);
-            }
-            s.push(arr[i]);
-        }
-        while(!s.isEmpty()){
-            System.out.println(s.pop() + " -> -1");
-        }
+          int num = 12345;
+          int result = CountDigits(num);
+          System.out.println("number of digit = " + result);
     }
 }
