@@ -1,20 +1,26 @@
 import java.util.*;
 
-public class Today{
-    public static void main(String args[]){
-        Stack<Integer> s = new Stack<>();
+public class Today {
+    public static boolean isBalanced(String str) {
+        Stack<Character> s = new Stack<>();
 
-        // push 
-        s.push(10);
-        s.push(20);
-        s.push(30);
+        for(char ch : str.toCharArray()) {
+            if(ch == '(' || ch == '{' || ch == '[')
+                s.push(ch);
+            else {
+                if(s.isEmpty()) return false;
+                char top = s.pop();
+                if((ch == ')' && top != '(') ||
+                   (ch == '}' && top != '{') ||
+                   (ch == ']' && top != '['))
+                    return false;
+            }
+        }
+        return s.isEmpty();
+    }
 
-        // Peek
-        System.out.println("Top element :-" + s.peek());
-
-        // Pop
-        System.out.println("Removed :-" + s.pop());
-
-        System.out.println("Stack:-" + s);
+    public static void main(String[] args) {
+        String str = "{[()]}";
+        System.out.println(isBalanced(str));
     }
 }
