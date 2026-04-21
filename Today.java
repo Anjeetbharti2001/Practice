@@ -1,26 +1,16 @@
 import java.util.*;
-
-public class Today {
-    public static boolean isBalanced(String str) {
+public class Today{
+    public static void main(String args[]){
+        String str = "Anjeet";
         Stack<Character> s = new Stack<>();
 
-        for(char ch : str.toCharArray()) {
-            if(ch == '(' || ch == '{' || ch == '[')
-                s.push(ch);
-            else {
-                if(s.isEmpty()) return false;
-                char top = s.pop();
-                if((ch == ')' && top != '(') ||
-                   (ch == '}' && top != '{') ||
-                   (ch == ']' && top != '['))
-                    return false;
-            }
-        }
-        return s.isEmpty();
-    }
+        for(char ch : str.toCharArray())
+            s.push(ch);
 
-    public static void main(String[] args) {
-        String str = "{[()]}";
-        System.out.println(isBalanced(str));
+        String rev = "";
+        while(!s.isEmpty())
+            rev += s.pop();
+
+        System.out.println("Reversed : " + rev);
     }
 }
