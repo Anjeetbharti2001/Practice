@@ -1,12 +1,9 @@
-import java.util.*;
 public class Today{
     public static void main(String args[]){
-        Stack<Integer> s = new Stack<>();
-        
-        System.out.println(s.isEmpty());//true
+        int arr[] = {4,5,6,7,8,9};
 
-        s.push(10);
-        System.out.println(s.isEmpty());// False
-
+        for(int i = 0; i<arr.length; i++){
+            System.out.println(arr[i] + " ");
+        }
     }
 }
