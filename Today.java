@@ -1,9 +1,8 @@
 public class Today{
     public static void main(String args[]){
-        int arr[] = {4,5,6,7,8,9};
+        int arr[] = {3,5,66,7,8,5};
 
-        for(int i = 0; i<arr.length; i++){
-            System.out.println(arr[i] + " ");
-        }
+        int len = arr.length;
+        System.out.println("Length of arrays = " + len);
     }
 }
