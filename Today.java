@@ -1,14 +1,15 @@
-public class Today{
-    static int CountDigits(int n){
-        if(n == 0){
-            return 0;
-        }
-        //recursive call
-        return 1 + CountDigits(n/10);
-    }
+//Reversed a string using stack 
+import java.util.*;
+public class Today {
     public static void main(String args[]){
-          int num = 12345;
-          int result = CountDigits(num);
-          System.out.println("number of digit = " + result);
+        String str = "hello";
+        Stack<Character> s = new Stack<>();
+
+        for(char ch: str.toCharArray()){
+            s.push(ch);
+        }
+        while(!str.isEmpty()){
+            System.out.println(s.pop());
+        }
     }
 }
