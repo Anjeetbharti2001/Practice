@@ -1,15 +1,15 @@
-//Reversed a string using stack 
-import java.util.*;
-public class Today {
-    public static void main(String args[]){
-        String str = "hello";
-        Stack<Character> s = new Stack<>();
+// Inser element
 
-        for(char ch: str.toCharArray()){
-            s.push(ch);
-        }
-        while(!str.isEmpty()){
-            System.out.println(s.pop());
-        }
+import java.util.Stack;
+
+public class Today{
+    public static void main(String args[]){
+        Stack<Integer> s = new Stack<>();
+
+        s.push(20);
+        s.push(40);
+        s.push(60);
+
+        System.out.println(s);
     }
 }
