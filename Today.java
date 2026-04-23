@@ -3,13 +3,15 @@ import java.util.*;
 public class Today{
     public static void main(String args[]){
         Queue<Integer> q = new LinkedList<>();
+        Scanner sc = new Scanner(System.in);
 
-        q.add(10);
-        q.add(20);
-        q.add(30);
-
-        System.out.println("queue:" + q);
-        System.out.println("System" + q.poll());
-        System.out.println("front " + q.peek());
+        System.out.println("Enter five Element:-");
+        for(int i = 0; i<5; i++){
+            q.add(sc.nextInt());
+        }
+        System.out.println("queue elements:-");
+        for(int x : q){
+            System.out.println(x + " ");
+        }
     }
 }
