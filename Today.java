@@ -1,8 +1,13 @@
 public class Today{
     public static void main(String args[]){
-        int a = 3;
-        int b = 8;
-        int sum = a + b;
-        System.out.println("total sum :-" + sum);
+        int arr[] = {5,7,8,9};
+        int count = 0;
+        
+        for(int i = 0; i<arr.length; i++){
+            if(arr[i] %2 != 0){
+                count++;
+            }
+        }
+        System.out.println(count);
     }
 }
