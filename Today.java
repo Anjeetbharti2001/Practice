@@ -1,13 +1,12 @@
+import java.util.*;
 public class Today{
     public static void main(String args[]){
-        int arr[] = {39,2,51,2};
-        int min = arr[0];
+        LinkedList<String> boys = new LinkedList<String>();
+        boys.add("Anjeet");
+        boys.add("Bharti");
+        boys.add("Hamu");
+        boys.add("Mazda");
 
-        for(int i = 0 ; i<arr.length; i++){
-            if(arr[i] < min ){
-                min = arr[i];
-            }
-        }
-        System.out.println(min);
+        System.out.println(boys);
     }
 }
