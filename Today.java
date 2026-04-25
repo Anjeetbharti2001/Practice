@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Today{
     public static void main(String args[]){
-        // Create a copys of the arrays list
+        // checks whether an item exist in the list
         ArrayList<String> boys = new ArrayList<String>();
         boys.add("Anjeet");
         boys.add("bharti");
@@ -11,10 +11,10 @@ public class Today{
         boys.add("Chita");
         boys.add("sher");
         boys.add("Tiger");
+        boys.add("I am a problem solver");
         
-        ArrayList boys2 = (ArrayList)boys.clone();
-        boys2.set(0, "King");
-        System.out.println(boys);
-        System.out.println(boys2);
+        System.out.println(boys.contains("I am a problem solver"));
+
+        System.out.println(boys.contains("I am best software engineer"));
     }
 }
