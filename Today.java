@@ -1,13 +1,16 @@
+// add Two numbers(user input)
+import java.util.*;
 public class Today{
-    public static int sum(int k){
-        if(k > 0){
-            return k + sum(k - 1);
-        }else{
-            return 0;
-        }
-    }
     public static void main(String args[]){
-       int result = sum(10);
-       System.out.println(result);
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first number:-");
+
+        int num1 = sc.nextInt();
+        System.out.print("Enter second number:-");
+
+        int num2 = sc.nextInt();
+
+        int sum = num1 + num2;
+        System.out.print("the sum is :- " + sum);
     }
 }
