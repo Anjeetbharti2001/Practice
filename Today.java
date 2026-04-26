@@ -1,13 +1,9 @@
 public class Today{
     public static void main(String args[]){
-        int arr[] = {3,5,7,8};
-        int count = 0; 
+        int a = 91;
+        int b = 2;
 
-        for(int i = 0; i<arr.length; i++){
-            if(arr[i] %2 == 0){
-                count++;
-            }
-        }
-        System.out.println(count);
+        int sum = a%b;
+        System.out.println(sum);
     }
 }
