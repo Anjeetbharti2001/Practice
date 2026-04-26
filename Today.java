@@ -1,16 +1,11 @@
-// add Two numbers(user input)
-import java.util.*;
+// check Even or Odd
 public class Today{
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter first number:-");
-
-        int num1 = sc.nextInt();
-        System.out.print("Enter second number:-");
-
-        int num2 = sc.nextInt();
-
-        int sum = num1 + num2;
-        System.out.print("the sum is :- " + sum);
+        int number = 7; // You can also takes as user input
+        if(number % 2 == 0){
+            System.out.println(number + " is even.");
+        }else{
+            System.out.println(number + " is Odd.");
+        }
     }
 }
