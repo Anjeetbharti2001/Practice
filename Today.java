@@ -1,13 +1,10 @@
-import java.util.*;
 public class Today{
     public static void main(String args[]){
-        Queue<Integer> q = new LinkedList<>();
+        String str = "Anjeet";
+        char first = str.charAt(0);
+        char last  = str.charAt(str.length()-1);
 
-        q.add(10);
-        q.add(20);
-        q.add(30);
-        System.out.println("queue:-" + q);
-        System.out.println("remove" + q.poll());
-        System.out.println("front:" + q.peek());
-    }
+        System.out.println("This is first string:-" + first );
+        System.out.println("this is last:-" + last);
+     }
 }
