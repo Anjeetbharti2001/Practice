@@ -1,23 +1,12 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 public class Today{
-    public static void main(String agrs[]){
-        int radius = 0;
-        System.out.println("Please enter radius of a circle");
-        try{
-            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-            radius = Integer.parseInt(br.readLine());
+    public static void main(String args[]){
+        int limit = 50;
+        System.out.println("Printing Even number between 1 and " + limit);
+        for(int i = 1; i<= limit; i++){
+            // if the number is divisible by 2 then it is even 
+            if(i % 2 == 0){
+                System.out.print(i+ " ");
+            }
         }
-        catch(NumberFormatException ne){
-            System.out.println("Invalid radius value" + ne);
-            System.exit(0);
-        }
-        catch(IOException ioe){
-            System.out.println("IO error : " + ioe);
-            System.exit(0);
-        }
-        double area = Math.PI*radius* radius;
-        System.out.println("Area of a circle is " + area);
     }
 }
