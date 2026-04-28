@@ -1,10 +1,11 @@
 public class Today{
+    //java program to print a number pattern in a reverse triangle shape.
     public static void main(String args[]){
-        String str = "Anjeet";
-        char first = str.charAt(0);
-        char last  = str.charAt(str.length()-1);
-
-        System.out.println("This is first string:-" + first );
-        System.out.println("this is last:-" + last);
-     }
+        for(int i = 5; i>=1 ; i--){
+            for(int j = 1; j<= i; j++){
+                System.out.print(i);
+            }
+            System.out.println();
+        }
+    }
 }
