@@ -1,11 +1,23 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 public class Today{
-    // java Programming to print star pattern in a reverse triangle shape.
-    public static void main(String args[]){
-        for(int i = 5; i>=1; i--){
-            for(int j = 1; j<=i; j++){
-                System.out.print("* ");
-            }
-            System.out.println();
+    public static void main(String agrs[]){
+        int radius = 0;
+        System.out.println("Please enter radius of a circle");
+        try{
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            radius = Integer.parseInt(br.readLine());
         }
+        catch(NumberFormatException ne){
+            System.out.println("Invalid radius value" + ne);
+            System.exit(0);
+        }
+        catch(IOException ioe){
+            System.out.println("IO error : " + ioe);
+            System.exit(0);
+        }
+        double area = Math.PI*radius* radius;
+        System.out.println("Area of a circle is " + area);
     }
 }
