@@ -1,11 +1,11 @@
 public class Today{
     public static void main(String args[]){
-        int a = 10;
+        int b = 10;
        
 
         // using unary operators
-        System.out.println("Post Increament value:-" + (a++));
-        System.out.println("Pre Increament :-" + (++a));
+        System.out.println("Post Decreament :- " + (b--));
+        System.out.println("Pre decrement:-" + (--b));
 
     }
 }
