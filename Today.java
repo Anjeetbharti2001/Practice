@@ -1,13 +1,11 @@
 import java.util.*;
 public class Today{
-    public static void main(String [] args){
-        HashMap<Integer, String> map = new HashMap<>();
-        
-        map.put(1, "Ram");
-        map.put(2," Shyam");
-        
-        System.out.println(map);
-        System.out.println(map.get(1));// Ram
+    // how to check element in hashset?
+    public static void main(String args[]){
+        HashSet<Integer> set = new HashSet<>();
+        set.add(10);
+        set.add(20);
 
+        System.out.println(set.contains(10));//True
     }
 }
