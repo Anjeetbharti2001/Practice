@@ -1,8 +1,6 @@
-// Count Total Nodes int Tree
-
+// Print leaf Nodes
 class Node {
     int data;
-
     Node left, right;
 
     Node(int value){
@@ -11,16 +9,24 @@ class Node {
 }
 
 public class Today{
-    static int countNodes(Node root){
+
+    static void printLeaf(Node root){
         if(root == null)
-            return 0;
-        return 1 + countNodes(root.left) + countNodes(root.right);
+            return;
+
+
+        if(root.left == null && root.right == null)
+            System.out.println(root.data + " ");
+
+        printLeaf(root.left);
+        printLeaf(root.right);
     }
     public static void main(String args[]){
-       Node root = new Node(1);
-       root.left = new Node(2);
-       root.right = new Node(3);
+        Node root = new Node(1);
+        root.left = new Node(2);
+        root.right = new Node(3);
+        root.left.left = new Node(4);
 
-       System.out.println("Total Nodes: " + countNodes(root));
+        printLeaf(root);
     }
 }
