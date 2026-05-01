@@ -1,5 +1,4 @@
-// Print leaf Nodes
-class Node {
+class Node{
     int data;
     Node left, right;
 
@@ -10,23 +9,17 @@ class Node {
 
 public class Today{
 
-    static void printLeaf(Node root){
+    static int height(Node root){
         if(root == null)
-            return;
+            return 0;
 
-
-        if(root.left == null && root.right == null)
-            System.out.println(root.data + " ");
-
-        printLeaf(root.left);
-        printLeaf(root.right);
+        return 1 + Math.max(height(root.left), height(root.right));
     }
     public static void main(String args[]){
         Node root = new Node(1);
         root.left = new Node(2);
         root.right = new Node(3);
-        root.left.left = new Node(4);
 
-        printLeaf(root);
+        System.out.println("Height:-" + height(root));
     }
 }
