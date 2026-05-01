@@ -1,21 +1,26 @@
-// Create a boinary tree and print the root
+// Count Total Nodes int Tree
 
-// Question: Create a tree and print root value
-
-class Node{
+class Node {
     int data;
+
     Node left, right;
 
     Node(int value){
         data = value;
-
-        left = right = null;
     }
 }
-public class Today{
-    public static void main(String args[]){
-        Node root = new Node(10);
 
-        System.out.println("root: " + root.data);
+public class Today{
+    static int countNodes(Node root){
+        if(root == null)
+            return 0;
+        return 1 + countNodes(root.left) + countNodes(root.right);
+    }
+    public static void main(String args[]){
+       Node root = new Node(1);
+       root.left = new Node(2);
+       root.right = new Node(3);
+
+       System.out.println("Total Nodes: " + countNodes(root));
     }
 }
