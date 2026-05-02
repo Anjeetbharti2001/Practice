@@ -1,13 +1,12 @@
-//Sorting argorithm
-import java.util.*;
 public class Today{
     public static void main(String args[]){
-        // Arrays example
-        int [] nums = {5,3,8,1};
-        Arrays.sort(nums);
-        System.out.println("Sorted arrays:-" + Arrays.toString(nums));
-        List<Integer>list = new ArrayList<>(Arrays.asList(5,3,8,1));
-        Collections.sort(list);
-        System.out.println("Sorted list: " + list);
+        //Immutable String 
+        String s = "Hello Anjeet beta";
+        System.out.println(s);
+
+        //Mutable String builder
+        StringBuilder sb = new StringBuilder("Hello" + " ");
+        sb.append("Anjeet");
+        System.out.println(sb.toString());
     }
 }
