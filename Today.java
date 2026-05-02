@@ -1,14 +1,12 @@
 import java.util.*;
 public class Today{
     public static void main(String args[]){
-        Set<Object> set = new HashSet<>();
+        Map<Object, Object> map = new HashMap<>();
+        map.put(10, "Anjeet");
+        map.put(20, "hello");
+        map.put("hello", "world");
+        map.put(2.0, 55);
 
-        set.add(10);
-        set.add(20);
-        set.add(20);
-        set.add("Anjeet");
-        set.add(true);
-
-        System.out.println(set);
+        System.out.println(map);
     }
 }
