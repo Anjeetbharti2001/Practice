@@ -1,12 +1,14 @@
+import java.util.*;
 public class Today{
     public static void main(String args[]){
-        //Immutable String 
-        String s = "Hello Anjeet beta";
-        System.out.println(s);
+        Set<Object> set = new HashSet<>();
 
-        //Mutable String builder
-        StringBuilder sb = new StringBuilder("Hello" + " ");
-        sb.append("Anjeet");
-        System.out.println(sb.toString());
+        set.add(10);
+        set.add(20);
+        set.add(20);
+        set.add("Anjeet");
+        set.add(true);
+
+        System.out.println(set);
     }
 }
