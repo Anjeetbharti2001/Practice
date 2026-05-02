@@ -1,25 +1,17 @@
-class Node{
-    int data;
-    Node left, right;
-
-    Node(int value){
-        data = value;
-    }
-}
-
+import java.util.*;
 public class Today{
-
-    static int height(Node root){
-        if(root == null)
-            return 0;
-
-        return 1 + Math.max(height(root.left), height(root.right));
-    }
     public static void main(String args[]){
-        Node root = new Node(1);
-        root.left = new Node(2);
-        root.right = new Node(3);
-
-        System.out.println("Height:-" + height(root));
+       List<Integer> List = Arrays.asList(2,4,6,8,10);
+       int key = 6;
+       // Linear Search 
+       System.out.println("Linear Search : -" + List.contains(key));
+       // Binary Search using the collections.BinarySearch
+       //(list must be sorted)
+       int index = Collections.binarySearch(List,key);
+       if(index >= 0){
+        System.out.println("Element Found at index " + index);
+       }else{
+        System.out.println("Element not Found");
+       }
     }
 }
