@@ -1,16 +1,23 @@
-// Max Heap 
+// Find Kth Smallest Element 
+
 import java.util.*;
 
 public class Today{
     public static void main(String args[]){
-        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+        int arr[] = {7,10,4,3,20,15};
 
-        pq.add(30);
-        pq.add(10);
-        pq.add(20);
+        int k = 2;
 
-        while(!pq.isEmpty()){
-            System.out.print(pq.poll() + " ");
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        for(int num : arr){
+            pq.add(num);
         }
+
+        for(int i = 0; i< k; i++){
+            pq.poll();
+        }
+
+        System.out.println(pq.peek());
     }
 }
