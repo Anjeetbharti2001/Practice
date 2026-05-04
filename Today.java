@@ -1,9 +1,9 @@
-// Inser element and print them in  sorte order using heap.
+// Max Heap 
 import java.util.*;
 
 public class Today{
     public static void main(String args[]){
-        PriorityQueue<Integer>pq = new PriorityQueue<>();
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
 
         pq.add(30);
         pq.add(10);
