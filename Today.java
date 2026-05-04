@@ -2,13 +2,15 @@ import java.util.*;
 
 public class Today{
     public static void main(String args[]){
-        int arr[] = {5,3,9,1,6};
-        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+        int[] arr = {4,2,7,1,3};
+
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
 
         for(int num : arr){
             pq.add(num);
         }
-
-        System.out.println("Largest : " + pq.peek());
+        while(!pq.isEmpty()){
+            System.out.print(pq.poll() + " ");
+        }
     }
 }
