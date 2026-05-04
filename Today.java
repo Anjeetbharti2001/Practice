@@ -1,15 +1,16 @@
+// Inser element and print them in  sorte order using heap.
 import java.util.*;
+
 public class Today{
     public static void main(String args[]){
-        HashMap<Integer, String> map = new HashMap<>();
+        PriorityQueue<Integer>pq = new PriorityQueue<>();
 
-        map.put(101, "Anjeet");
-        map.put(102, "Rahul");
-        map.put(103, "Amit");
+        pq.add(30);
+        pq.add(10);
+        pq.add(20);
 
-        System.out.println(map);
-
-        //Access value
-        System.out.println(map.get(101));
+        while(!pq.isEmpty()){
+            System.out.print(pq.poll() + " ");
+        }
     }
 }
