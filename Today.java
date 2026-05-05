@@ -1,18 +1,32 @@
-// You can climb 1 or 2 steps. Find total ways to rach n stairs.
-public class Today{
-    public static int ways(int n ){
-        if(n <= 2) return n;
+public class Today {
+    public static int knapsack(int[] wt, int[] val, int w, int n) {
+        int dp[][] = new int[n + 1][w + 1];
 
-        int dp[] = new  int[n + 1];
-        dp[1] = 1;
-        dp[2] = 2;
+        for (int i = 0; i <= n; i++) {
+            for (int W = 0; W <= w; W++) {
 
-        for(int i = 3; i<= n; i++){
-            dp[i] = dp[i - 1] + dp[i - 2];
+                if (i == 0 || W == 0) {
+                    dp[i][W] = 0;
+                }
+                else if (wt[i - 1] <= W) {
+                    dp[i][W] = Math.max(
+                        val[i - 1] + dp[i - 1][W - wt[i - 1]],
+                        dp[i - 1][W]
+                    );
+                }
+                else {
+                    dp[i][W] = dp[i - 1][W];
+                }
+            }
         }
-        return dp[n];
+        return dp[n][w];
     }
-    public static void main(String args[]){
-       System.out.println(ways(4));// 5
+
+    public static void main(String args[]) {
+        int wt[] = {1, 2, 3};
+        int val[] = {10, 15, 40};
+        int w = 6;
+
+        System.out.println(knapsack(wt, val, w, wt.length)); // 65
     }
 }
