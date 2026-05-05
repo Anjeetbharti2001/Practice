@@ -1,15 +1,8 @@
-// Swap two number using pointer
 #include<stdio.h>
-void swap(int *x, int *y){
-    int temp = *x;
-    *x = *y;
-    *y = temp;
-}
 int main(){
-    int a = 10, b = 20;
+    int arr[3] = {1,2,3};
+    int *p = arr;
 
-    swap(&a, &b);
-
-    printf("a = %d, b = %d", a, b);
+    printf("%d %d", *p, *(p + 1), *(p + 2));
     return 0;
 }
