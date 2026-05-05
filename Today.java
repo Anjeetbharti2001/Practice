@@ -1,26 +1,17 @@
-// Check if Heap is Empty
-
-import java.util.*;
-
 public class Today{
+    public static int fib(int n){
+        if(n <= 1) return n;
+
+        int dp[] = new int[n + 1];
+        dp[0] = 0;
+        dp[1] = 1;
+
+        for(int i = 2; i<= n; i++){
+            dp[i] = dp[i -1] + dp[i - 2];
+        }
+        return dp[n];
+    }
     public static void main(String args[]){
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
-
-        pq.add(10);
-        pq.add(20);
-
-        while(!pq.isEmpty()){
-            pq.poll();
-        }
-
-        if(pq.isEmpty()){
-            pq.poll();
-        }
-
-        if(pq.isEmpty()){
-            System.out.println("Heap is Empty");
-        }else{
-            System.out.println("Heap is not Empty");
-        }
+       System.out.println(fib(6));
     }
 }
