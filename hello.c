@@ -1,10 +1,10 @@
-// 
 #include<stdio.h>
 
-void greet(){
-    printf("Hello Anjeet");
-}
 int main(){
-    greet();
+    int a = 10;
+    printf("value of a = %d\n", a);
+    printf("Address of a = %p\n", &a);
+
     return 0;
+    
 }
