@@ -1,32 +1,38 @@
-public class Today {
-    public static int knapsack(int[] wt, int[] val, int w, int n) {
-        int dp[][] = new int[n + 1][w + 1];
+// Find minimum cost to reach bottom- right of matrix.
+public class Today{
+    public static  int minCost(int[][] grid){
+        int m = grid.length;
+        int n = grid[0].length;
 
-        for (int i = 0; i <= n; i++) {
-            for (int W = 0; W <= w; W++) {
+        int dp[][] = new int [m][n];
+        dp[0][0] = grid[0][0];
 
-                if (i == 0 || W == 0) {
-                    dp[i][W] = 0;
-                }
-                else if (wt[i - 1] <= W) {
-                    dp[i][W] = Math.max(
-                        val[i - 1] + dp[i - 1][W - wt[i - 1]],
-                        dp[i - 1][W]
-                    );
-                }
-                else {
-                    dp[i][W] = dp[i - 1][W];
-                }
+        // first row 
+        for(int i = 1; i< n; i++)
+            dp[0][i] = dp[0][i - 1] + grid[0][i];
+
+        //first column
+        for(int i = 1 ; i< m ; i++)
+            dp[i][0] = dp[i - 1][0] + grid[i][0];
+
+        // rest
+         for(int i = 1; i< m; i++){
+            for(int j = 1; j< n; j++){
+                dp[i][j] = grid[i][j] + Math.min(
+                    dp[i - 1][j],
+                    dp[i][j - 1]
+                );
             }
-        }
-        return dp[n][w];
+         }
+         return dp[m - 1][n - 1];
     }
-
-    public static void main(String args[]) {
-        int wt[] = {1, 2, 3};
-        int val[] = {10, 15, 40};
-        int w = 6;
-
-        System.out.println(knapsack(wt, val, w, wt.length)); // 65
+    public static void main(String args[]){
+        int grid[][] = {
+            {1,3,1},
+            {1,5,1},
+            {4,2,1}
+        };
+        System.out.println(minCost(grid));
     }
 }
+    
