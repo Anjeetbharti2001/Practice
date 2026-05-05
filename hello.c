@@ -1,9 +1,10 @@
 #include<stdio.h>
 int main(){
-    int a = 20;
+    int a = 5;
+
     int *p = &a;
 
-    printf("value using pointer = %d", *p);
+    *p = 50;
+    printf("Updated value = %d", a);
     return 0;
-    
 }
