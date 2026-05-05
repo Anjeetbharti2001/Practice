@@ -1,8 +1,10 @@
 #include<stdio.h>
 int main(){
-    int arr[3] = {1,2,3};
-    int *p = arr;
+    int a = 5, b = 10;
+    int *p1 = &a,*p2 = &b;
 
-    printf("%d %d", *p, *(p + 1), *(p + 2));
-    return 0;
+    int sum = *p1 + *p2;
+
+    printf("sum = %d ", sum);
+    return 0; 
 }
