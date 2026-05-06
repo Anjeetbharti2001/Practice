@@ -1,21 +1,13 @@
 public class Today{
+    // Reverse a given string 
     public static void main(String args[]){
-        int arr[] = {4,2,1,4,5,3};
-        int start = 0;
-        int end =arr.length -1;
+        String str = "hello";
+        String rev = "";
 
-       while(start < end ){
-        int temp = arr[start];
-        arr[start] = arr[end];
-        arr[end] =temp;
+        for(int i = str.length() - 1; i>= 0; i--){
+            rev += str.charAt(i);
+        }
 
-        start++;
-        end--;
-       }
-
-       // Print reversed arrays
-       for(int i = 0; i< arr.length; i++){
-        System.out.print(arr[i] + " ");
-       }
+        System.out.println("Reversed : " + rev);
     }
 }
