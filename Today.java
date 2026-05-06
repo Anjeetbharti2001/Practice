@@ -1,3 +1,4 @@
+// Count number of nodes
 class Node {
     int data;
     Node left, right;
@@ -9,18 +10,18 @@ class Node {
 
 
 public class Today{
-    public static void preorder(Node root){
-        if(root != null){
-            System.out.print(root.data + " ");
-            preorder(root.left);
-            preorder(root.right);
-        }
+    public static int count(Node root){
+        if(root == null)
+            return 0;
+
+        return 1 + count(root.left) + count(root.right);
     }
     public static void main(String args[]){
-       Node root = new Node(10);
-       root.left = new Node(20);
-       root.right = new Node(30);
+        Node root = new Node(10);
+        root.left = new Node(20);
+        root.right = new Node(30);
 
-       preorder(root);
+        System.out.println("Total Nodes : " + count(root));
+
     }
 }
