@@ -1,16 +1,12 @@
-// count character in string 
-
+import java.util.*;
 public class Today{
     public static void main(String args[]){
-        String str = "Anjeet bharti";
+        Stack<Integer> stack = new Stack<>();
 
-        int count = 0;
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
 
-        for(int i = 0; i<str.length(); i++){
-            if(str.charAt(i) != ' '){
-                count++;
-            }
-        }
-        System.out.println("Characters : " + count);
+        System.out.println(stack);
     }
 }
