@@ -1,11 +1,16 @@
-// count string to uppercase 
+// count character in string 
 
 public class Today{
     public static void main(String args[]){
-        String str = "Hello world";
+        String str = "Anjeet bharti";
 
-        String upper = str.toUpperCase();
+        int count = 0;
 
-        System.out.println("UpperCase :" + upper);
+        for(int i = 0; i<str.length(); i++){
+            if(str.charAt(i) != ' '){
+                count++;
+            }
+        }
+        System.out.println("Characters : " + count);
     }
 }
