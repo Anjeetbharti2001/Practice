@@ -1,3 +1,4 @@
+//pop element from stack
 import java.util.*;
 public class Today{
     public static void main(String args[]){
@@ -6,6 +7,8 @@ public class Today{
         stack.push(10);
         stack.push(20);
         stack.push(30);
+
+        stack.pop();
 
         System.out.println(stack);
     }
