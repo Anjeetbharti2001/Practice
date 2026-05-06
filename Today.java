@@ -1,15 +1,20 @@
-// Search Element in stack
-import java.util.*;
+// create a simple binary tree 
+class Node{
+    int data;
+    Node left, right;
+
+    Node(int data){
+        this.data = data;
+        left = right = null;
+    }
+}
 
 public class Today{
     public static void main(String args[]){
-        Stack<Integer> stack = new Stack<>();
+        Node root = new Node(10);
+        root.left = new Node(20);
+        root.right = new Node(30);
 
-        stack.push(10);
-        stack.push(20);
-        stack.push(30);
-        int pos = stack.search(20);
-
-        System.out.println("Position : " + pos);
+        System.out.println("Root : " + root.data);
     }
 }
