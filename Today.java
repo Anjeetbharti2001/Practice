@@ -1,4 +1,4 @@
-// Count number of nodes
+// Find height of tree
 class Node {
     int data;
     Node left, right;
@@ -8,20 +8,20 @@ class Node {
     }
 }
 
-
 public class Today{
-    public static int count(Node root){
+    public static int height(Node root){
         if(root == null)
             return 0;
 
-        return 1 + count(root.left) + count(root.right);
+        return 0;
+        // return 1 + Math.max(height(root.left), height(root.right));
+    
     }
     public static void main(String args[]){
         Node root = new Node(10);
         root.left = new Node(20);
         root.right = new Node(30);
 
-        System.out.println("Total Nodes : " + count(root));
-
+        System.out.println("Height : " + height(root));
     }
 }
