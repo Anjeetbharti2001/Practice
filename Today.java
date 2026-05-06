@@ -1,13 +1,15 @@
-//check stack is empty
+// Search Element in stack
 import java.util.*;
+
 public class Today{
     public static void main(String args[]){
         Stack<Integer> stack = new Stack<>();
 
-        if(stack.isEmpty()){
-            System.out.println("Stack is empty");
-        }else{
-            System.out.println("Stack is not empty");
-        }
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        int pos = stack.search(20);
+
+        System.out.println("Position : " + pos);
     }
 }
