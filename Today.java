@@ -1,13 +1,16 @@
+// check palindrome string 
 public class Today{
-    // Reverse a given string 
     public static void main(String args[]){
-        String str = "hello";
+        String str = "madam";
         String rev = "";
 
         for(int i = str.length() - 1; i>= 0; i--){
             rev += str.charAt(i);
         }
-
-        System.out.println("Reversed : " + rev);
+        if(str.equals(rev)){
+            System.out.println("Palindrome");
+        }else{
+            System.out.println("Not palindrome");
+        }
     }
 }
