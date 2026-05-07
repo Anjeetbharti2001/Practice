@@ -1,10 +1,9 @@
 #include<stdio.h>
 int main(){
-    int a = 5, b = 10;
-    int *p1 = &a,*p2 = &b;
+    int x = 10;
+    int *p = &x;
 
-    int sum = *p1 + *p2;
+    printf("values of x = %d\n", x);
 
-    printf("sum = %d ", sum);
-    return 0; 
+    return 0;
 }
