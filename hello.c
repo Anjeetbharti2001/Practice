@@ -1,12 +1,11 @@
 #include<stdio.h>
+
 int main(){
+
     int x = 10;
     int *p = &x;
 
-    *p = 50;
-    
-
-    printf("values of x = %d\n", x);
+    printf("print value of &x = %p", &x);
 
     return 0;
 }
