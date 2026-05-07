@@ -1,11 +1,8 @@
 #include<stdio.h>
-
 int main(){
-
-    int x = 10;
+    int x = 90;
     int *p = &x;
 
-    printf("print value of &x = %p", &x);
-
+    printf("p stores= %p\n" ,*p);
     return 0;
 }
