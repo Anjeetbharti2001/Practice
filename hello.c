@@ -3,6 +3,9 @@ int main(){
     int x = 10;
     int *p = &x;
 
+    *p = 50;
+    
+
     printf("values of x = %d\n", x);
 
     return 0;
