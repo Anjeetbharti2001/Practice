@@ -1,27 +1,12 @@
-// Find height of tree
-class Node {
-    int data;
-    Node left, right;
-
-    Node(int data){
-        this.data = data;
-    }
-}
-
 public class Today{
-    public static int height(Node root){
-        if(root == null)
-            return 0;
-
-        return 0;
-        // return 1 + Math.max(height(root.left), height(root.right));
-    
-    }
     public static void main(String args[]){
-        Node root = new Node(10);
-        root.left = new Node(20);
-        root.right = new Node(30);
+        String str =  "Anjeet";
 
-        System.out.println("Height : " + height(root));
+        String rev = "";
+
+        for(int i = str.length() - 1; i>=0; i--){
+            rev += str.charAt(i);
+        }
+        System.out.println("Reversed : " + rev);
     }
 }
