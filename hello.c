@@ -13,13 +13,12 @@
 // find lenght of string 
 
 #include<stdio.h>
-#include<math.h>
+#include<ctype.h>
 
 int main(){
-    int  num = 25;
+    char ch = 'a';
 
-    printf("%f", sqrt(num));
+    printf("%c", toupper(ch));
 
     return 0;
-    
 }
