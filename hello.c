@@ -1,12 +1,26 @@
+// #include<stdio.h>
+
+// // Function defination 
+// void greet(){
+//     printf("Hello Anjeet");
+// }
+
+// int main(){
+//     greet(); // Function call
+//     return 0;
+    
+// }
+
 #include<stdio.h>
 
-// Function defination 
-void greet(){
-    printf("Hello Anjeet");
+int add(int a, int b){
+    return a + b;
 }
 
 int main(){
-    greet(); // Function call
+    int result = add(5,3);
+
+    printf("%d", result);
+
     return 0;
-    
 }
