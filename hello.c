@@ -1,8 +1,12 @@
 #include<stdio.h>
-int main(){
-    int x = 90;
-    int *p = &x;
 
-    printf("value using  pointer = %d\n" ,*p);
+// Function defination 
+void greet(){
+    printf("Hello Anjeet");
+}
+
+int main(){
+    greet(); // Function call
     return 0;
+    
 }
