@@ -1,26 +1,10 @@
-// #include<stdio.h>
-
-// // Function defination 
-// void greet(){
-//     printf("Hello Anjeet");
-// }
-
-// int main(){
-//     greet(); // Function call
-//     return 0;
-    
-// }
+//Print Anjeet using library function 
 
 #include<stdio.h>
 
-int add(int a, int b){
-    return a + b;
-}
-
 int main(){
-    int result = add(5,3);
-
-    printf("%d", result);
+    printf("Hello world show the output ");
 
     return 0;
+
 }
