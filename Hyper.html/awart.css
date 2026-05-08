@@ -1,39 +1,28 @@
-*{
-    margin : 0;
-    padding : 0;
-    box-sizing: border-box;
+.contaner{
+    display:grid;
+    grid-template-areas:"header header"
+    "menu content"
+    "footer footer" ;
+    grid-template-columns: 1 fr 3 fr;
+    gap: 3px;
+    background-color: dodgerblue;
+    padding: 5px;
 }
-
-body{
-    background-color: black;
-    color:white;
+.container div {
+  background-color: white;
+  padding: 10px;
 }
-.container{
-    display: grid;
+.container div.header {
+  grid-area: header;
+  text-align: center;
 }
-.container{
-    display: grid;
-
-    grid-template-columns: repeat(18, 70px);
+.container div.menu {
+  grid-area: menu;
 }
-.element{
-    border: 1px solid white;
-    height: 70px;
-    width : 70px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container div.content {
+  grid-area: content;
 }
-.element{
-    grid-column: 1;
-}
-.hydrogen{
-    grid-column: 1;
-}
-.helium {
-    grid-column: 18;
-}
-.helium{
-    grid-column: 5;
+.container div.footer {
+  grid-area: footer;
+  text-align: center;  
 }
