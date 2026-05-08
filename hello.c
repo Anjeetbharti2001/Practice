@@ -13,13 +13,13 @@
 // find lenght of string 
 
 #include<stdio.h>
-#include<string.h>
+#include<math.h>
 
 int main(){
-    char name[] = "Anjeet";
-    int len = strlen(name);
+    int  num = 25;
 
-    printf("Length = %d", len);
+    printf("%f", sqrt(num));
 
     return 0;
+    
 }
