@@ -1,14 +1,14 @@
 import java.util.*;
+
 public class Today{
     public static void main(String args[]){
-        HashMap<Integer, String> map = new HashMap<>();
+        HashSet<Integer> set = new HashSet<>();
 
-        map.put(1, "Anjeet");
-        map.put(2, "Rahul");
-        map.put(3, "Aman");
+        set.add(10);
+        set.add(20);
+        set.add(10);
+        set.add(30);
 
-        for(Integer key : map.keySet()){
-            System.out.println(key + " = " + map.get(key));
-        }
+        System.out.println(set);
     }
 }
