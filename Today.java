@@ -1,16 +1,14 @@
 import java.util.*;
-
 public class Today{
-    public static void  main(String args[]){
-        LinkedList<String> list = new LinkedList<>();
+    public static void main(String args[]){
+        HashMap<Integer, String> map = new HashMap<>();
 
-        list.add("Ram");
-        list.add("Anjeet");
-        list.add("Mohan");
+        map.put(1, "Anjeet");
+        map.put(2, "Rahul");
+        map.put(3, "Aman");
 
-        for(String name : list){
-            System.out.println(name);
+        for(Integer key : map.keySet()){
+            System.out.println(key + " = " + map.get(key));
         }
-
     }
 }
