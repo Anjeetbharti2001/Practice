@@ -1,14 +1,16 @@
 import java.util.*;
+
 public class Today{
-    public static void main(String args[]){
-        Stack<Integer> st = new Stack<>();
+    public static void  main(String args[]){
+        LinkedList<String> list = new LinkedList<>();
 
-        st.push(10);
-        st.push(20);
-        st.push(30);
+        list.add("Ram");
+        list.add("Anjeet");
+        list.add("Mohan");
 
-        while(!st.isEmpty()){
-            System.out.println(st.pop());
+        for(String name : list){
+            System.out.println(name);
         }
+
     }
 }
