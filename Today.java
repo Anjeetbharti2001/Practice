@@ -1,7 +1,10 @@
 public class Today{
     public static void main(String args[]){
-        int i = 5, j = 6, k = 7, n = 3;
-        System.out.println(i + j * k - k % n);
-        System.out.println( i / n );  
+        int found = 0, count = 5;
+        if(found == 0 || --count == 0){
+            System.out.println("danger");
+        
+        System.out.println("count = " + count);
+        }
     }
 }
