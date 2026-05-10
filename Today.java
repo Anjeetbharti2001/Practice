@@ -1,10 +1,10 @@
 public class Today{
     public static void main(String args[]){
-        int found = 0, count = 5;
-        if(found == 0 || --count == 0){
-            System.out.println("danger");
-        
-        System.out.println("count = " + count);
-        }
+        char [] title = {'T', 'i', 't','a','n', 'i', 'c'};
+      char  ch = title[1];
+        title[3] = ch;
+
+        System.out.println(title);
+        System.out.println(ch);
     }
 }
