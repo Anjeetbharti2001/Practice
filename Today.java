@@ -1,21 +1,37 @@
-class Node {
-    int data;
-    Node left, right;
-
-    Node(int data){
-        this.data = data;
-    }
-}
+//what is the exact output of the program below. Indicate a blank line in the output by writing blank line
 
 public class Today{
     public static void main(String args[]){
-        Node root = new Node(10);
+        int n = 4, k = 2;
 
-        root.left = new Node(20);
-        root.right = new Node(30);
+        System.out.println(++n);
+        System.out.println(n);
 
-        System.out.println("Root = " + root.data);
-        System.out.println("Left child = " + root.left.data);
-        System.out.println("Right child = " + root.right.data);
+        System.out.println(n++);
+        System.out.println(n);
+
+        System.out.println(-n);
+        System.out.println(n);     
+
+        System.out.println(--n);
+        System.out.println(n);
+
+        System.out.println(n--);      
+        System.out.println(n);
+
+        System.out.println(n + k);    
+        System.out.println(n);
+        System.out.println(k);        
+        System.out.println("" + n + " " + k );
+
+        System.out.println(n);       
+        System.out.println(" " + n );
+        System.out.println(" n");
+        System.out.println("\n");
+
+        System.out.println(" n * n = "); // careful!
+        System.out.println(n * n);
+        System.out.println('n');
     }
+
 }
