@@ -1,13 +1,7 @@
 public class Today{
-    enum colorType { red, orange, yellow, green, blue, violet};
     public static void main(String args[]){
-        colorType shirt, pants;
-
-        shirt = colorType.red;
-        pants = colorType.blue;
-
-        System.out.println(" " + shirt + " " + pants);
-        
+        int i = 5, j = 6, k = 7, n = 3;
+        System.out.println(i + j * k - k % n);
+        System.out.println( i / n );  
     }
-
 }
