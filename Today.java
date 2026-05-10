@@ -1,10 +1,12 @@
+import java.util.*;
 public class Today{
     public static void main(String args[]){
-        char [] title = {'T', 'i', 't','a','n', 'i', 'c'};
-      char  ch = title[1];
-        title[3] = ch;
+        String message;
+        Scanner scan = new Scanner(System.in);
 
-        System.out.println(title);
-        System.out.println(ch);
+        System.out.println("Enter a sentence on the line below.");
+        message = scan.next();
+
+        System.out.println(message);
     }
 }
