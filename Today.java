@@ -1,16 +1,17 @@
-// what is the output of the programs below?
-
 public class Today{
     public static void main(String args[]){
-        int n = 3;
-        while(n >= 0){
-            System.out.println(n);
+        int n ;
 
-            while(n < 4)
-                System.out.println(++n);
-            System.out.println(n);
-            while(n >= 0)
-                System.out.println((n/= 2));
-        }
+        System.out.println((n = 4));
+        System.out.println((n = 4));
+        System.out.println((n > 3));
+        System.out.println((n < 4));
+        System.out.println((n = 0));
+        System.out.println((n == 0));
+        System.out.println((n > 0));
+        System.out.println((n == 0 && true));
+        System.out.println((n == 0 || true));
+        System.out.println(!(n == 2));
+
     }
 }
