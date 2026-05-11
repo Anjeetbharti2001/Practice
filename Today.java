@@ -1,12 +1,9 @@
-import java.util.*;
 public class Today{
     public static void main(String args[]){
-        String message;
-        Scanner scan = new Scanner(System.in);
-
-        System.out.println("Enter a sentence on the line below.");
-        message = scan.next();
-
-        System.out.println(message);
+        int n = 10;
+        while(n > 0){
+            n /= 2;
+            System.out.println(n * n);
+        }
     }
 }
