@@ -28,11 +28,24 @@
 
 // Compare two String 
 
+// public class Today{
+//     public static void main(String args[]){
+//         String a = "java";
+//         String b = "java";
+
+//         System.out.println(a.equals(b));
+//     }
+// }
+
+// concatenate Two Strings
+
 public class Today{
     public static void main(String args[]){
-        String a = "java";
-        String b = "java";
+        String first = "Hello";
+        String second = "world";
 
-        System.out.println(a.equals(b));
+        String result = first + second;
+
+        System.out.println(result);
     }
 }
