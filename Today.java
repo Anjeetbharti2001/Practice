@@ -39,13 +39,23 @@
 
 // concatenate Two Strings
 
+// public class Today{
+//     public static void main(String args[]){
+//         String first = "Hello";
+//         String second = "world";
+
+//         String result = first + second;
+
+//         System.out.println(result);
+//     }
+// }
+
+// Find the character Using charAt
+
 public class Today{
     public static void main(String args[]){
-        String first = "Hello";
-        String second = "world";
+        String name = "Anjeet";
 
-        String result = first + second;
-
-        System.out.println(result);
+        System.out.println(name.charAt(2));
     }
 }
