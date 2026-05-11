@@ -18,10 +18,21 @@
 
 //convert string to lowercase
 
+// public class Today{
+//     public static void main(String args[]){
+//         String word = "HELLO";
+
+//         System.out.println(word.toLowerCase());
+//     }
+// }
+
+// Compare two String 
+
 public class Today{
     public static void main(String args[]){
-        String word = "HELLO";
+        String a = "java";
+        String b = "java";
 
-        System.out.println(word.toLowerCase());
+        System.out.println(a.equals(b));
     }
 }
