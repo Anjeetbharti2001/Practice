@@ -8,10 +8,20 @@
 // }
 
 // Convert string to uppercase
+// public class Today{
+//     public static void main(String args[]){
+//         String city = "bhubaneswer";
+
+//         System.out.println(city.toUpperCase());
+//     }
+// }
+
+//convert string to lowercase
+
 public class Today{
     public static void main(String args[]){
-        String city = "bhubaneswer";
+        String word = "HELLO";
 
-        System.out.println(city.toUpperCase());
+        System.out.println(word.toLowerCase());
     }
 }
