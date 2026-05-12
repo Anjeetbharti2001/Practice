@@ -1,22 +1,51 @@
-// write a function no argument but return value
+// // write a function to check even or odd number
+
+// #include<stdio.h>
+
+// // function declaration
+// int main(){
+//     int n;
+
+//     printf("Enter a number:-");
+//     Scanf("%d",&n);
+
+//     // function call 
+//     checkEvenOdd(n);
+//     return 0;
+// }
+// // function defination
+// void checkEvenOdd(int num){
+//     if(num %2 == 0){
+//         printf("even number:-");
+//     }else{
+//         printf("odd number:-");
+//     }
+// }
+
+// write a function to check even or odd number
 
 #include<stdio.h>
 
-//function declaration
-int add();
+// function declaration
+void checkEvenOdd(int num);
 
-//main function 
 int main(){
-    int result ;
-    result = add(); // calling function 
-    printf("sum = %d", result);
+    int n;
+
+    printf("Enter a number:- ");
+    scanf("%d", &n);
+
+    // function call
+    checkEvenOdd(n);
+
     return 0;
 }
-// function defination
-int add(){
-    int a = 10, b = 20;
-    int sum;
 
-    sum = a + b;
-    return sum ;
+// function definition
+void checkEvenOdd(int num){
+    if(num % 2 == 0){
+        printf("Even number");
+    }else{
+        printf("Odd number");
+    }
 }
