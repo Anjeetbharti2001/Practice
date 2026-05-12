@@ -1,24 +1,11 @@
-// #include<stdio.h>
-
-// int main(){
-//     int num;
-
-//     scanf("%d", &num);
-
-//     prinf("Number = %d", num);
-
-//     return 0;
-// }
-
-// find lenght of string 
-
 #include<stdio.h>
-#include<ctype.h>
+int add(int a , int b){
+    return 0;
+}
 
 int main(){
-    char ch = 'a';
-
-    printf("%c", toupper(ch));
-
+    int num1 = 5, num2 = 10;
+    int result = add(num1, num2);
+    printf("sum = %d\n", result);
     return 0;
 }

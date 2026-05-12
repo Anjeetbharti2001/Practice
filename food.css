@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+}
+
+header{
+    background-color: #111;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+section{
+    padding: 40px;
+    text-align: center;
+}
+#home{
+    animation: face 3s;
+    background-image: url('foodbanner.jpg');
+    background-color: orange;
+    color: white;
+}
+@keyframes fade{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+   background-color: darkred;
+   transform: scale(1.1);
+   transition: 0.3s;
+}
+
+#menu div{
+    background-color: white;
+    margin: 15px auto;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+#menu img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* Mobile Responsive */
+@media(max-width: 600px){
+
+    nav a{
+        display: block;
+        margin: 5px 0;
+    }
+
+    #home{
+        height: 200px;
+    }
+
+    #menu div{
+        width: 90%;
+    }
+}
