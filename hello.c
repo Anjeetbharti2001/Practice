@@ -1,22 +1,12 @@
-// write a function to find a factorial value
 #include<stdio.h>
-// function to find factorial 
-
-int factorial(int n){
-    int fact = 1;
-
-    for(int i = 1; i<=n; i++){
-        fact = fact * i;
-    }
-    return fact;
-}
-
 int main(){
-    int num;
-    printf("Enter a number:-");
-    scanf("%d ", &num);
+    //Normal variable 
+    int var = 10;
+    // Pointer varable ptr that stores address of var 
+    int *ptr = &var;
 
-    printf("Factorial = %d", factorial(num));
+    // Directly accessing ptr will give us an address
+    printf("%p", ptr);
 
     return 0;
 }
