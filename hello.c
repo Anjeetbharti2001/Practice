@@ -1,51 +1,22 @@
-// // write a function to check even or odd number
-
-// #include<stdio.h>
-
-// // function declaration
-// int main(){
-//     int n;
-
-//     printf("Enter a number:-");
-//     Scanf("%d",&n);
-
-//     // function call 
-//     checkEvenOdd(n);
-//     return 0;
-// }
-// // function defination
-// void checkEvenOdd(int num){
-//     if(num %2 == 0){
-//         printf("even number:-");
-//     }else{
-//         printf("odd number:-");
-//     }
-// }
-
-// write a function to check even or odd number
-
+// write a function to find a factorial value
 #include<stdio.h>
+// function to find factorial 
 
-// function declaration
-void checkEvenOdd(int num);
+int factorial(int n){
+    int fact = 1;
 
-int main(){
-    int n;
-
-    printf("Enter a number:- ");
-    scanf("%d", &n);
-
-    // function call
-    checkEvenOdd(n);
-
-    return 0;
+    for(int i = 1; i<=n; i++){
+        fact = fact * i;
+    }
+    return fact;
 }
 
-// function definition
-void checkEvenOdd(int num){
-    if(num % 2 == 0){
-        printf("Even number");
-    }else{
-        printf("Odd number");
-    }
+int main(){
+    int num;
+    printf("Enter a number:-");
+    scanf("%d ", &num);
+
+    printf("Factorial = %d", factorial(num));
+
+    return 0;
 }
