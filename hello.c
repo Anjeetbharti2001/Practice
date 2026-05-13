@@ -1,13 +1,17 @@
 #include<stdio.h>
 
+// Non - tail- recursive factorial function 
+
+unsigned int fact(unsigned int n){
+    if(n <= 0)
+    return 1;
+
+    //Recursive call is not the last operation 
+    return n * fact(n - 1);
+}
 int main(){
-    void print(int n ){
-    if(n < 0)
-    return ;
-    printf("%d", n );
+    // Testing the factorial function 
+    printf("%u", fact(5));
 
-    //The last executed statement is recursive call
-    print(n - 1);
+    return 0;
 }
-}
-
