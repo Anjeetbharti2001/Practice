@@ -1,12 +1,14 @@
 #include<stdio.h>
+
+
+int factorial(int n ){
+    if(n <= 1){
+        return 1;
+    }else{
+        return n * factorial(n -1); // recursive case
+    }
+}
 int main(){
-    //Normal variable 
-    int var = 10;
-    // Pointer varable ptr that stores address of var 
-    int *ptr = &var;
-
-    // Directly accessing ptr will give us an address
-    printf("%p", ptr);
-
+    printf("Factorial of 5 is : %d ", factorial(5));
     return 0;
 }
