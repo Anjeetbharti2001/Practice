@@ -1,14 +1,15 @@
 #include<stdio.h>
 
-void rec(int n ){
-    // Base Case
-    if(n == 6) return ;
+void f(int n ){
+    printf("F(%d)'s Stack frame pushshed\n", n);
 
-    printf("Recursion level %d\n", n);
-    rec(n + 1);
+    if(n > 1){
+        f(n - 1);
+        f(n - 1);
+    }
+    printf("F(%d)'s Stack frame removed\n", n);
 }
-
 int main(){
-    rec(1);
+    f(3);
     return 0;
 }
