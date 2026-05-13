@@ -1,17 +1,17 @@
+// tail recursive function to calculate factorial 
 #include<stdio.h>
 
-// Non - tail- recursive factorial function 
+unsigned int factTR(unsigned int n, unsigned int a){
+    if(n <= 1)
+    return a ;
 
+    return factTR(n - 1, n * a);
+}
+// A wrapper over factTR
 unsigned int fact(unsigned int n){
-    if(n <= 0)
-    return 1;
-
-    //Recursive call is not the last operation 
-    return n * fact(n - 1);
+    return factTR(n, 1);
 }
 int main(){
-    // Testing the factorial function 
     printf("%u", fact(5));
-
     return 0;
 }
