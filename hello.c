@@ -1,15 +1,13 @@
 #include<stdio.h>
 
-void f(int n ){
-    printf("F(%d)'s Stack frame pushshed\n", n);
-
-    if(n > 1){
-        f(n - 1);
-        f(n - 1);
-    }
-    printf("F(%d)'s Stack frame removed\n", n);
-}
 int main(){
-    f(3);
-    return 0;
+    void print(int n ){
+    if(n < 0)
+    return ;
+    printf("%d", n );
+
+    //The last executed statement is recursive call
+    print(n - 1);
 }
+}
+
