@@ -1,14 +1,14 @@
 #include<stdio.h>
 
+void rec(int n ){
+    // Base Case
+    if(n == 6) return ;
 
-int factorial(int n ){
-    if(n <= 1){
-        return 1;
-    }else{
-        return n * factorial(n -1); // recursive case
-    }
+    printf("Recursion level %d\n", n);
+    rec(n + 1);
 }
+
 int main(){
-    printf("Factorial of 5 is : %d ", factorial(5));
+    rec(1);
     return 0;
 }
