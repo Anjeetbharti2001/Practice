@@ -1,4 +1,4 @@
-// BFS(Breadth first search)
+// DFS (Depth First Search)
 
 #include<stdio.h>
 
@@ -10,28 +10,20 @@ int graph[4][4] = {
 };
 
 int visited[4] = {0};
-void BFS(int start){
-    int queue[10];
-    int front = 0, rear = 0;
 
-    visited[start] = 1;
-    queue[rear++] = start;
-while(front < rear){
-    int current = queue[front++];
-    printf("%d", current);
+void DFS(int node){
+    visited[node] = 1;
+    printf("%d ", node);
 
-    for(int i = 0; i<4; i++){
-        if(graph[current][i] == 1 && !visited[i]){
-            visited[i] = 1;
-            queue[rear++] = i;
+    for(int i = 0; i< 4; i++){
+        if(graph[node][i] == 1 && !visited[i]){
+            DFS(i);
         }
     }
 }
-
-}
-
 int main(){
-    printf("BFS Traversal : ");
-    BFS(0);
+    printf("DFS Traversal : ");
+    DFS(0);
+
     return 0;
 }
