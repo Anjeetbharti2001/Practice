@@ -1,18 +1,14 @@
-// Reverse a String 
-
 public class Today{
+    public static int sum(int n){
+        // base condition 
+        if(n == 1)
+            return 1;
+
+        return n + sum(n - 1);
+    }
     public static void main(String args[]){
-        String str = "education";
+        int n = 5; 
+        System.out.println(sum(n));
 
-        int count = 0; 
-
-        for(int i = 0; i<str.length(); i++){
-            char ch = str.charAt(i);
-
-            if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
-                count++;
-            }
-        }
-        System.out.println("Vowels =  " + count);
     }
 }
