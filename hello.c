@@ -1,18 +1,18 @@
 #include<stdio.h>
 int main(){
-    int num = 10;
+    int n, first = 0, second = 1, next;
 
-    // Pointer variable 
-    int*ptr;
+    printf("Enter number of terms: ");
+    scanf("%d", &n);
 
-    // Address store karna 
-    ptr = &num;
+    printf("Fibonacci series: ");
 
-    printf("Value of num = %d\n", num );
-    printf("Address of num = %p\n",&num);
+    for(int i = 0; i< n; i++){
+        printf("%d ", first);
 
-    printf("Pointer ptr store address = %p\n", ptr);
-    printf("value using pointer = %d\n", *ptr);
-
+        next = first + second;
+        first = second;
+        second = next;
+    }
     return 0;
 }
