@@ -1,7 +1,10 @@
 public class Today{
     public static void main(String args[]){
-        String str = " Programming";
+        String first = "Hello";
+        String second = "World";
 
-        System.out.println("Character = " + str.length());
+        String result = first + second;
+
+        System.out.println(result);
     }
 }
