@@ -1,15 +1,16 @@
 public class Today{
     public static void main(String args[]){
-        String str = "Education";
-        int count = 0;
+        String str = "madam";
+        String rev = "";
 
-        for(int i = 0; i<str.length(); i++){
-            char ch = str.charAt(i);
-
-            if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
-                count++;
-            }
+        for(int i = str.length() - 1; i>= 0; i--){
+            rev =rev + str.charAt(i);
         }
-        System.out.println("Total Vowels : " + count);
+
+        if(str.equals(rev)){
+            System.out.println("Palindrome");
+        }else{
+            System.out.println("Not Palindrome");
+        }
     }
 }
