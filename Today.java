@@ -1,7 +1,7 @@
 public class Today{
     public static void main(String args[]){
-        String str = "JAVA PROGRAM";
+        String str = "java";
 
-        System.out.println(str.toLowerCase());
+        System.out.println("Length = " + str.length());
     }
 }
