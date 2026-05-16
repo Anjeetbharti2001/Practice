@@ -1,10 +1,9 @@
 public class Today{
     public static void main(String args[]){
-        String first = "Hello";
-        String second = "World";
+        String str = "java Programming ";
 
-        String result = first + second;
+        str = str.replace(" ", "");
 
-        System.out.println(result);
+        System.out.println(str);
     }
 }
