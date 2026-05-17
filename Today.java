@@ -1,11 +1,11 @@
 public class Today{
-    public static void main(String args[]){
-        String str = "Hello";
-        String rev = "";
+    static int sum (int n){
+        if(n == 1)
+            return 1;
 
-        for(int i = str.length()-1; i>= 0; i--){
-            rev = rev + str.charAt(i);
-        }
-        System.out.println("Reversed string : " + rev);
+        return n + sum(n - 1);
+    }
+    public static void main(String args[]){
+        System.out.println(sum(5));
     }
 }
