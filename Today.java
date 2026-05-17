@@ -1,14 +1,13 @@
-//print Fibonacci number using recursion
 public class Today{
-    static int fib(int n){
-        if(n == 0)
-            return 0;
-        if(n == 1)
-            return 1;
-
-        return fib(n - 1) + fib(n - 2);
+    static void reverse(int n){
+        if(n < 10){
+            System.out.print(n);
+            return;
+        }
+        System.out.print(n % 10 );
+        reverse(n /10);
     }
     public static void main(String args[]){
-        System.out.println(fib(6));
+     reverse(1234);
     }
 }
