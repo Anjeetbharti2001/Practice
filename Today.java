@@ -1,13 +1,10 @@
 public class Today{
-    static void reverse(int n){
-        if(n < 10){
-            System.out.print(n);
-            return;
-        }
-        System.out.print(n % 10 );
-        reverse(n /10);
+    static int power(int a, int b){
+        if(b == 0)
+            return 1;
+        return a * power(a, b - 1);
     }
     public static void main(String args[]){
-     reverse(1234);
+       System.out.println(power(2,3));
     }
 }
