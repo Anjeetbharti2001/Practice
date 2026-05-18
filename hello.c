@@ -1,15 +1,11 @@
+// Print ASCII value of the Character 
 #include<stdio.h>
 int main(){
-   float r, area,circum;
+    char ch;
 
-printf("Enter radius: ");
-scanf("%f", &r);
+    printf("Enter character : - ");
+    scanf("%c", &ch);
 
-area = 3.14 * r * r;
-circum = 2 * 3.14 * r;
-
-printf("Area = %.2f\n", area);
-printf("Circumference = %.2f", circum);
-
-return 0;
+    printf("ASCII value = %d", ch);
+    return 0;
 }
