@@ -1,14 +1,11 @@
-// Convert Celsius into Fahrenheit
+//Display Size of Different Data Types
+
 #include<stdio.h>
-
 int main(){
-    float c, f;
-    printf("Enter temperature in celcius :");
-    scanf("%f", &c);
-
-    f = (9 * c / 5) + 32;
-
-    printf("Temperature in Fahrenheit = %.2f", f);
+    printf("Size of int = %lu bytes\n", sizeof(int));
+    printf("size of char = %lu bytes\n",sizeof(char));
+    printf("size of  float = %lu bytes\n", sizeof(float));
+    printf("size of double = %lu bytes\n", sizeof(double));
 
     return 0;
 }
