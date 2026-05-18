@@ -1,18 +1,14 @@
-//convert a Person's Name in Abbreviated
+// simple Interest 
 #include<stdio.h>
+
 int main(){
-    char fname[20], mname[20], lname[20];
+    float  p, r, t,si;
+    printf("Enter Principal, Rate, Time:- ");
+    scanf("%f %f %f", &p, &r, &t);
 
-    printf("Enter first name : ");
-    scanf("%s", fname);
+    si = (p * r * t)/ 100;
 
-    printf("Enter Middle Name : ");
-    scanf("%s", mname);
-
-    printf("Enter Last Name :");
-    scanf("%s", lname);
-
-    printf("Abbreviated Name: %c.%c.%s", fname[0], mname[0], lname);
+    printf("Simple Interest = %.2f", si);
 
     return 0;
 }
