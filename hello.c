@@ -1,14 +1,18 @@
-// simple Interest 
+// Gross Salary of an Employee 
+
 #include<stdio.h>
-
 int main(){
-    float  p, r, t,si;
-    printf("Enter Principal, Rate, Time:- ");
-    scanf("%f %f %f", &p, &r, &t);
+    float basic, da, hra, gross;
 
-    si = (p * r * t)/ 100;
+    printf("Enter basic Salary: ");
+    scanf("%f", &basic);
 
-    printf("Simple Interest = %.2f", si);
+    da = basic * 0.40;
+    hra = basic * 0.20;
+
+    gross = basic + da + hra;
+
+    printf("Gross salary = %.2f", gross);
 
     return 0;
 }
