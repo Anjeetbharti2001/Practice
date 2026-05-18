@@ -1,11 +1,13 @@
-// Print ASCII value of the Character 
+// Area of Triangle
 #include<stdio.h>
+
 int main(){
-    char ch;
+    float base, height, area;
+    printf("Enter base and Height :-");
+    scanf("%f %f", &base, &height);
 
-    printf("Enter character : - ");
-    scanf("%c", &ch);
+    area = 0.5 * base * height;
+    printf(" Area = %.2f", area);
 
-    printf("ASCII value = %d", ch);
     return 0;
 }
