@@ -1,11 +1,23 @@
-public class Today{
-    static int gcd(int a, int b){
-        if(b == 0)
-            return a;
+public class Today {
 
-        return gcd(b, a%b);
+    static boolean palindrome(String str, int start, int end) {
+
+        if (start >= end)
+            return true;
+
+        if (str.charAt(start) != str.charAt(end))
+            return false;
+
+        return palindrome(str, start + 1, end - 1);
     }
-    public static void main(String args[]){
-        System.out.println(gcd(12,18));
+
+    public static void main(String args[]) {
+
+        String s = "madam";
+
+        if (palindrome(s, 0, s.length() - 1))
+            System.out.println("Palindrome");
+        else
+            System.out.println("Not palindrome");
     }
 }
