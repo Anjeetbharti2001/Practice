@@ -1,18 +1,15 @@
 #include<stdio.h>
 int main(){
-    int n, first = 0, second = 1, next;
+   float r, area,circum;
 
-    printf("Enter number of terms: ");
-    scanf("%d", &n);
+printf("Enter radius: ");
+scanf("%f", &r);
 
-    printf("Fibonacci series: ");
+area = 3.14 * r * r;
+circum = 2 * 3.14 * r;
 
-    for(int i = 0; i< n; i++){
-        printf("%d ", first);
+printf("Area = %.2f\n", area);
+printf("Circumference = %.2f", circum);
 
-        next = first + second;
-        first = second;
-        second = next;
-    }
-    return 0;
+return 0;
 }
