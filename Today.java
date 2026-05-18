@@ -1,12 +1,11 @@
-// Find product of Two Number using Recursion
 public class Today{
-    static int product(int a, int b){
+    static int gcd(int a, int b){
         if(b == 0)
-            return 0;
+            return a;
 
-        return a + product(a, b -1);
+        return gcd(b, a%b);
     }
     public static void main(String args[]){
-        System.out.println(product(4,3));
+        System.out.println(gcd(12,18));
     }
 }
