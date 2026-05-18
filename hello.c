@@ -1,18 +1,17 @@
-// Gross Salary of an Employee 
-
+// Percentage of 5 subjects
 #include<stdio.h>
+
 int main(){
-    float basic, da, hra, gross;
+    float s1, s2, s3, s4, s5, total, per;
 
-    printf("Enter basic Salary: ");
-    scanf("%f", &basic);
+    printf("Enter marks of 5 subjects : ");
+    scanf("%f %f %f %f", &s1, &s2, &s3, &s4, &s5);
 
-    da = basic * 0.40;
-    hra = basic * 0.20;
+    total = s1 + s2 + s3 + s4 + s5;
+    per = (total / 500) * 100;
 
-    gross = basic + da + hra;
-
-    printf("Gross salary = %.2f", gross);
+    printf("Percentage = %.2f%%", per);
 
     return 0;
+
 }
