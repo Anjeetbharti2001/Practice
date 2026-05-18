@@ -1,10 +1,12 @@
 public class Today{
-    static int power(int a, int b){
-        if(b == 0)
-            return 1;
-        return a * power(a, b - 1);
+    static void print1ToN(int n){
+        if(n == 0)
+            return;
+
+        print1ToN(n - 1);
+        System.out.print(n + " ");
     }
     public static void main(String args[]){
-       System.out.println(power(2,3));
+        print1ToN(5);
     }
 }
