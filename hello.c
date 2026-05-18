@@ -1,17 +1,14 @@
-// Percentage of 5 subjects
+// Convert Celsius into Fahrenheit
 #include<stdio.h>
 
 int main(){
-    float s1, s2, s3, s4, s5, total, per;
+    float c, f;
+    printf("Enter temperature in celcius :");
+    scanf("%f", &c);
 
-    printf("Enter marks of 5 subjects : ");
-    scanf("%f %f %f %f", &s1, &s2, &s3, &s4, &s5);
+    f = (9 * c / 5) + 32;
 
-    total = s1 + s2 + s3 + s4 + s5;
-    per = (total / 500) * 100;
-
-    printf("Percentage = %.2f%%", per);
+    printf("Temperature in Fahrenheit = %.2f", f);
 
     return 0;
-
 }
