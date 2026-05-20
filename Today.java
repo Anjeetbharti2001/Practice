@@ -1,13 +1,14 @@
 public class Today{
-    static int sum(int arr[], int n){
+    static void even(int n ){
         if(n == 0)
-            return 0;
-        return arr[n - 1] + sum(arr, n - 1);
+            return ;
+
+        even(n - 1);
+
+        if(n % 2 == 0)
+            System.out.println(n + " ");
     }
     public static void main(String args[]){
-        int arr[] = {1, 2, 3, 4};
-
-        System.out.println(sum(arr, arr.length));
-
+        even(10);
     }
 }
