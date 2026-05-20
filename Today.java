@@ -1,11 +1,12 @@
+// Find Largest Digit in Number 
 public class Today{
-    static int multiply(int n ){
+    static int largest(int n){
         if(n < 10)
             return n;
-        return (n % 10) * multiply(n / 10);
 
+        return Math.max(n % 10, largest(n / 10));
     }
     public static void main(String args[]){
-        System.out.println(multiply(123));
+        System.out.println(largest(5382));
     }
 }
