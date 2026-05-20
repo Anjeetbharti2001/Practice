@@ -1,11 +1,13 @@
 public class Today{
-    static int sumDigits(int n){
+    static int sum(int arr[], int n){
         if(n == 0)
             return 0;
-
-        return (n % 10) + sumDigits(n /10);
+        return arr[n - 1] + sum(arr, n - 1);
     }
     public static void main(String args[]){
-        System.out.println(sumDigits(1234));
+        int arr[] = {1, 2, 3, 4};
+
+        System.out.println(sum(arr, arr.length));
+
     }
 }
