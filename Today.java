@@ -1,28 +1,28 @@
+import java.util.*;
+// coin change problem 
 public class Today{
-    // Longest comon subsequence
-    static int lcs(String s1, String s2){
-        int m = s1.length();
-        int n = s2.length();
+    public class CoinChangeDp{
+        static int minCoins(int coins[], int amount){
+            int dp[] = new int[amount + 1];
+            Arrays.fill(dp, amount + 1);
 
-        int dp[][] = new int[m + 1][n + 1];
+            dp[0] = 0;
 
-        for(int i = 1; i<= m; i++){
-            for(int j = 1; j<= n; j++){
-                
-                if(s1.charAt(i - 1) == s2.charAt(j - 1))
-                    dp[i][j] = dp[i - 1][j - 1] + 1;
+            for(int i = 1; i<= amount ; i++){
+                for(int coin : coins){
 
-                else
-                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
-                                               
+                    if(coin <= i){
+                        dp[i] = Math.min(dp[i], dp[i - coin] + 1);
+                    }
+                }
             }
+            return dp[amount] > amount ? -1 : dp[amount];
         }
-        return dp[m][n];
     }
     public static void main(String args[]){
-         String s1 = "ABCDAB";
-         String s2 = "BDCAB";
+        int coins[] = {1, 2, 5};
+        int amount = 11;
 
-         System.out.println("LCS length: " + lcs(s1, s2));
+        System.out.println("Minimum Coins : " + minCoins(coins, amount));
     }
 }
