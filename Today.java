@@ -1,22 +1,31 @@
 public class Today{
-    // Fibonacci series using dp
-    static int fib(int n){
-        int dp[] = new int [n + 1];
+    //0/1 Knapsack Problem
+    //question :- Find maximum profit in knapsack
+    static int knapsack(int W, int wt[], int val[], int n){
+        int dp[][] = new int[n + 1][W + 1];
 
-        dp[0] = 0;
-        dp[1] = 1;
+        for(int i = 0; i<= n; i++){
+            for(int w = 0;  w <= W; w++){
+                if(i == 0 || w == 0)
+                    dp[i][w] = 0;
 
-        for(int i = 2; i<= n; i++){
-            dp[i] = dp[i - 1] + dp[i - 2];
+                else if(wt[i - 1] <= w)
+                    dp[i][w] = Math.max(
+                val[i - 1] + dp[i - 1][w - wt[i - 1]],
+            dp[i - 1][w]
+        );
+        else
+             dp[i][w] = dp[i - 1][w];
+            }
         }
-
-        return dp[n];
+        return dp[n][W];
     }
-
     public static void main(String args[]){
+        int val[] = {60, 100, 120};
+        int wt[] = {10, 20, 30};
+        int W = 50;
 
-        int n = 10;
-        System.out.println("Fibonacci number: " + fib(n));
+        System.out.println("Maximumum Profit: " + knapsack(W, wt, val, val.length));
 
     }
 }
