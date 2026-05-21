@@ -1,31 +1,28 @@
 public class Today{
-    //0/1 Knapsack Problem
-    //question :- Find maximum profit in knapsack
-    static int knapsack(int W, int wt[], int val[], int n){
-        int dp[][] = new int[n + 1][W + 1];
+    // Longest comon subsequence
+    static int lcs(String s1, String s2){
+        int m = s1.length();
+        int n = s2.length();
 
-        for(int i = 0; i<= n; i++){
-            for(int w = 0;  w <= W; w++){
-                if(i == 0 || w == 0)
-                    dp[i][w] = 0;
+        int dp[][] = new int[m + 1][n + 1];
 
-                else if(wt[i - 1] <= w)
-                    dp[i][w] = Math.max(
-                val[i - 1] + dp[i - 1][w - wt[i - 1]],
-            dp[i - 1][w]
-        );
-        else
-             dp[i][w] = dp[i - 1][w];
+        for(int i = 1; i<= m; i++){
+            for(int j = 1; j<= n; j++){
+                
+                if(s1.charAt(i - 1) == s2.charAt(j - 1))
+                    dp[i][j] = dp[i - 1][j - 1] + 1;
+
+                else
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+                                               
             }
         }
-        return dp[n][W];
+        return dp[m][n];
     }
     public static void main(String args[]){
-        int val[] = {60, 100, 120};
-        int wt[] = {10, 20, 30};
-        int W = 50;
+         String s1 = "ABCDAB";
+         String s2 = "BDCAB";
 
-        System.out.println("Maximumum Profit: " + knapsack(W, wt, val, val.length));
-
+         System.out.println("LCS length: " + lcs(s1, s2));
     }
 }
