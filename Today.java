@@ -1,12 +1,22 @@
-// Find Largest Digit in Number 
 public class Today{
-    static int largest(int n){
-        if(n < 10)
-            return n;
+    // Fibonacci series using dp
+    static int fib(int n){
+        int dp[] = new int [n + 1];
 
-        return Math.max(n % 10, largest(n / 10));
+        dp[0] = 0;
+        dp[1] = 1;
+
+        for(int i = 2; i<= n; i++){
+            dp[i] = dp[i - 1] + dp[i - 2];
+        }
+
+        return dp[n];
     }
+
     public static void main(String args[]){
-        System.out.println(largest(5382));
+
+        int n = 10;
+        System.out.println("Fibonacci number: " + fib(n));
+
     }
 }
