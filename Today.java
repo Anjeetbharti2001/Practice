@@ -1,28 +1,25 @@
-import java.util.*;
-// coin change problem 
 public class Today{
-    public class CoinChangeDp{
-        static int minCoins(int coins[], int amount){
-            int dp[] = new int[amount + 1];
-            Arrays.fill(dp, amount + 1);
+    static int matrixChain(int arr[]){
+        int n = arr.length;
+        int dp[][] = new int[n][n];
 
-            dp[0] = 0;
+        for(int len = 2; len < n ; len++){
+            for(int i = 1; i < n - len + 1; i++){
+                int j = i + len - 1;
 
-            for(int i = 1; i<= amount ; i++){
-                for(int coin : coins){
+                dp[i][j] = Integer.MAX_VALUE;
 
-                    if(coin <= i){
-                        dp[i] = Math.min(dp[i], dp[i - coin] + 1);
-                    }
+                for(int k = i ; k < j ; k++){
+                    int cost = dp[i][k] + dp[k + 1][j] + arr[i - 1] * arr[k] *arr[j];
+                    dp[i][j] = Math.min(dp[i][j], cost);
                 }
             }
-            return dp[amount] > amount ? -1 : dp[amount];
         }
+        return dp[1][n - 1];
     }
     public static void main(String args[]){
-        int coins[] = {1, 2, 5};
-        int amount = 11;
+         int arr[] =  {1,2,3,4};
 
-        System.out.println("Minimum Coins : " + minCoins(coins, amount));
-    }
+         System.out.println("Minimum cost : " + matrixChain(arr));
+    } 
 }
