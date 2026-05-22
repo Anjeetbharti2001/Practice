@@ -1,16 +1,17 @@
+// climbing Stair Problem 
+
 public class Today{
     public static void main(String args[]){
-        int cost[] = {1,3,5,2};
-        int n = cost.length;
+        int n = 5;
+        int dp[] = new int[n + 1];
 
-        int dp[] = new int[n];
+        dp[0] = 1;
+        dp[1] = 1;
 
-        dp[0] = cost[0];
+        for(int i = 2; i<= n; i++){
+            dp[i] = dp[i - 1] + dp[i - 2];
 
-        for(int i = 1; i < n; i++){
-            dp[i] = cost[i] + dp[i - 1];
         }
-        System.out.println("Minimum cost :- " + dp[n -1]);
-
+        System.out.println("Total ways:-" + dp[n]);
     }
 }
