@@ -1,11 +1,11 @@
 public class Today{
-    // Function
-    static void greet(){
-        System.out.println("Hello anjeet ");
+    // Addition of Two Number
+    static int add(int a, int b){
+        return a + b;
     }
     public static void main(String args[]){
-        // function
-        greet();
+        int result = add(10, 20);
 
+        System.out.println("Sum = " + result);
     }
 }
