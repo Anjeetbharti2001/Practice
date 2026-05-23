@@ -1,13 +1,15 @@
 public class Today{
-    static int  factorial(int n){
-        int fact = 1;
+    static void fibonacci(int n){
+        int a = 0, b = 1;
+        for(int i = 1; i<= n ;  i++){
+            System.out.println(a + " ");
 
-        for(int i = 1; i<=n; i++){
-            fact = fact * i;
+            int c = a + b;
+            a = b;
+            b = c;
         }
-        return fact;
     }
     public static void main(String args[]){
-        System.out.println(factorial(5));
+        fibonacci(10);
     }
 }
