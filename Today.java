@@ -1,12 +1,12 @@
 public class Today{
-    static void check(int n){
-        if(n % 2 == 0){
-            System.out.println("Even");
+    static int max(int a, int b){
+        if(a > b){
+            return a;
         }else{
-            System.out.println("odd");
+            return b;
         }
     }
     public static void main(String args[]){
-        check(7);
+        System.out.println(max(15, 9));
     }
 }
