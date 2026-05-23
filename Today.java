@@ -1,9 +1,12 @@
-// Find square of A number 
 public class Today{
-    static int square(int n){
-        return n * n;
+    static void check(int n){
+        if(n % 2 == 0){
+            System.out.println("Even");
+        }else{
+            System.out.println("odd");
+        }
     }
     public static void main(String args[]){
-        System.out.println(square(5));
+        check(7);
     }
 }
