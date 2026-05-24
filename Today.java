@@ -1,18 +1,19 @@
-class Student {
-    private int marks;
-    public void setMarks(int m){
-        marks = m ;
-    }
-    public int getMarks(){
-        return marks;
+class Animal{
+    void sound(){
+        System.out.println("Animal makes sound");
     }
 }
 
+class Dog extends Animal{
+    void bark(){
+        System.out.println("Dog is Barks");
+    }
+}
 public class Today{
-    public static void main(String [] args){
-        Student s = new Student();
+    public static void main(String args[]){
+        Dog d = new Dog();
 
-        s.setMarks(90);
-        System.out.println("Marks : " + s.getMarks());
+        d.sound();
+        d.bark();
     }
 }
