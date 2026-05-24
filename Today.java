@@ -1,19 +1,16 @@
-class Animal{
-    void sound(){
-        System.out.println("Animal makes sound");
+class Add{
+    int sum(int a, int b){
+        return a + b;
     }
-}
-
-class Dog extends Animal{
-    void bark(){
-        System.out.println("Dog is Barks");
+    int sum(int a , int b , int c){
+        return a + b + c;
     }
 }
 public class Today{
     public static void main(String args[]){
-        Dog d = new Dog();
+        Add a = new Add();
 
-        d.sound();
-        d.bark();
+        System.out.println(a.sum(2,3));
+        System.out.println(a.sum(2,3,4));
     }
 }
