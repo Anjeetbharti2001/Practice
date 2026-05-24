@@ -1,16 +1,18 @@
-class Add{
-    int sum(int a, int b){
-        return a + b;
-    }
-    int sum(int a , int b , int c){
-        return a + b + c;
+abstract class Vehicle{
+    abstract void start();
+}
+
+class Car extends Vehicle{
+    void start(){
+        System.out.println("Car starts with key");
     }
 }
+
+
 public class Today{
     public static void main(String args[]){
-        Add a = new Add();
+        Car c = new Car();
 
-        System.out.println(a.sum(2,3));
-        System.out.println(a.sum(2,3,4));
+        c.start();
     }
 }
