@@ -1,14 +1,20 @@
-class Person{
-    String name = " Anjeet Bharti ";
+class Father{
+    void house(){
+        System.out.println("Fther has a house");
+    }
 }
-class Student extends Person{
-    int marks = 90;
+
+class Son extends Father{
+    void bike(){
+        System.out.println("Son has a bike ");
+    }
 }
+
 public class Today{
     public static void main(String args[]){
-        Student s = new Student();
+        Son s = new Son();
 
-        System.out.println("Name : " + s.name);
-        System.out.println("Marks" + s.marks);
+        s.house();
+        s.bike();
     }
 }
