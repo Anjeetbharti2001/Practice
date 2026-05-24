@@ -1,18 +1,21 @@
-abstract class Vehicle{
-    abstract void start();
-}
-
-class Car extends Vehicle{
-    void start(){
-        System.out.println("Car starts with key");
+// simple Inheritance Program 
+class Animal{
+    void eat(){
+        System.out.println("Animal is Eating ");
     }
 }
 
+class Dog extends Animal{
+    void bark(){
+        System.out.println("Dog is barking");
+    }
+}
 
 public class Today{
     public static void main(String args[]){
-        Car c = new Car();
+        Dog  d = new Dog();
 
-        c.start();
+        d.eat();
+        d.bark();
     }
 }
