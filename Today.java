@@ -1,15 +1,18 @@
-public class Today{
-    static void fibonacci(int n){
-        int a = 0, b = 1;
-        for(int i = 1; i<= n ;  i++){
-            System.out.println(a + " ");
-
-            int c = a + b;
-            a = b;
-            b = c;
-        }
+class Student {
+    private int marks;
+    public void setMarks(int m){
+        marks = m ;
     }
-    public static void main(String args[]){
-        fibonacci(10);
+    public int getMarks(){
+        return marks;
+    }
+}
+
+public class Today{
+    public static void main(String [] args){
+        Student s = new Student();
+
+        s.setMarks(90);
+        System.out.println("Marks : " + s.getMarks());
     }
 }
