@@ -1,13 +1,11 @@
-// count number of one bit 
 public class Today{
     public static void main(String args[]){
-        int n = 13; // 1101
-        int count = 0;
+        int n = 16;
 
-        while(n > 0){
-            count += (n & 1);
-            n = n >> 1;
+        if((n & (n - 1)) == 0){
+            System.out.println("Power of 2");
+        }else{
+            System.out.println("Not Power 2");
         }
-        System.out.println("Count = " + count );
     }
 }
