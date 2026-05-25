@@ -1,15 +1,10 @@
 public class Today{
-
     public static void main(String args[]){
-        int a = 5, b = 10;
+        int n = 10; // 1010
+        int i = 2;
 
-        a = a ^ b;
-        b = a ^ b;
-        a  = a ^ b;
+        int bit = (n >> i) & 1;
 
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
-
-
+        System.out.println("Bit = " + bit );
     }
 }
