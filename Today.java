@@ -1,10 +1,13 @@
+// count number of one bit 
 public class Today{
     public static void main(String args[]){
-        int n = 10; // 1010
-        int i = 1;
+        int n = 13; // 1101
+        int count = 0;
 
-        int result = n ^ ( 1 << i);
-
-        System.out.println(result);
+        while(n > 0){
+            count += (n & 1);
+            n = n >> 1;
+        }
+        System.out.println("Count = " + count );
     }
 }
