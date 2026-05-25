@@ -1,10 +1,15 @@
 public class Today{
+
     public static void main(String args[]){
-        int n = 7;
-        if((n & 1) == 0){
-            System.out.println("Even");
-        }else{
-            System.out.println("odd");
-        }
+        int a = 5, b = 10;
+
+        a = a ^ b;
+        b = a ^ b;
+        a  = a ^ b;
+
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+
+
     }
 }
