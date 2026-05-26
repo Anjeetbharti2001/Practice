@@ -1,11 +1,8 @@
 public class Today{
-
-    static int add(int a , int b){
-        return a + b;
+    static int square(int n){
+        return n * n ;
     }
     public static void main(String args[]){
-        int result = add(10, 20);
-
-        System.out.println("Sum = " + result );
+        System.out.println(square(5));
     }
 }
