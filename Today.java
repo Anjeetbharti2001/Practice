@@ -1,8 +1,10 @@
 public class Today{
-    static void greet(){
-        System.out.println("hello java");
+    static void add(int a , int b){
+        int sum = a + b;
+
+        System.out.println("sum = " + sum);
     }
     public static void main(String args[]){
-          greet();
+        add(10, 20);
     }
 }
