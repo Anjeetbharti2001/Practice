@@ -1,10 +1,11 @@
 public class Today{
-    static int multiply(int a, int b){
-        return a * b;
+
+    static int add(int a , int b){
+        return a + b;
     }
     public static void main(String args[]){
-        int result = multiply(5, 4);
+        int result = add(10, 20);
 
-        System.out.println("Multiplication = " + result );
+        System.out.println("Sum = " + result );
     }
 }
