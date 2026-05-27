@@ -1,15 +1,7 @@
 public class Today{
     public static void main(String args[]){
-        String str = "madam";
-        String rev = "";
+        String str = "Anjeet ";
 
-        for(int i = str.length() - 1; i >= 0; i--){
-            rev = rev + str.charAt(i);
-        }
-        if(str.equals(rev)){
-            System.out.println("Palindrome");
-        }else{
-            System.out.println("Not Palindrome");
-        }
+        System.out.println("Total characters: " + str.length());
     }
 }
