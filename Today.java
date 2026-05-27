@@ -1,12 +1,10 @@
 public class Today{
     public static void main(String args[]){
-        String s1 = "anjeet";
-        String s2 = "anjeet";
+        String first = " Anjeet ";
+        String second = "BHarti";
 
-        if(s1.equals(s2)){
-            System.out.println("String are Equal");
-        }else{
-            System.out.println("String are NOT Equal");
-        }
+        String result = first + " " + second;
+
+        System.out.println(result);
     }
 }
