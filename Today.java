@@ -1,10 +1,7 @@
 public class Today{
     public static void main(String args[]){
-        String first = " Anjeet ";
-        String second = "BHarti";
+        String str = "Programming ";
 
-        String result = first + " " + second;
-
-        System.out.println(result);
+        System.out.println("Length = " + str.length());
     }
 }
