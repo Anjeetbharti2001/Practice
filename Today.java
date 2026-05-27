@@ -1,7 +1,7 @@
 public class Today{
     public static void main(String args[]){
-        String str = "Anjeet ";
+        String str = "HI Anjeet ";
 
-        System.out.println("Total characters: " + str.length());
+        System.out.println(str.toLowerCase());
     }
 }
