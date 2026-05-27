@@ -1,7 +1,15 @@
 public class Today{
     public static void main(String args[]){
-        String str = "Programming ";
+        String str = "education";
+        int count = 0;
 
-        System.out.println("Length = " + str.length());
+        for(int i = 0; i < str.length(); i++){
+            char ch = str.charAt(i);
+
+            if(ch== 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ){
+                count++;
+            }
+            System.out.println("Total vowels :-" + count);
+        }
     }
 }
