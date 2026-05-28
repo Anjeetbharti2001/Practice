@@ -1,5 +1,10 @@
 public class Today{
     public static void main(String args[]){
-        System.out.println("Anjeet bharti");
+        for(int i = 0; i < 10; i++){
+            if(i == 4){
+                break;
+            }
+            System.out.println(i);
+        }
     }
 }
