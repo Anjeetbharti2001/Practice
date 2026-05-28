@@ -1,12 +1,14 @@
-import java.util.*;
+class Car{
+    String color;
 
+    void drive(){
+        System.out.println("Car is Driving ");
+    }
+}
 public class Today{
     public static void main(String args[]){
-        ArrayList<String> names = new ArrayList<>();
-
-        names.add("Alice");
-        names.add("bod");
-
-        System.out.println(names);
+        Car myCar = new Car();
+        myCar.color = "Red";
+        myCar.drive();
     }
 }
