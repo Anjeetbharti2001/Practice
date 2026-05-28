@@ -1,14 +1,11 @@
-class Car{
-    String color;
-
-    void drive(){
-        System.out.println("Car is Driving ");
-    }
-}
 public class Today{
     public static void main(String args[]){
-        Car myCar = new Car();
-        myCar.color = "Red";
-        myCar.drive();
+        int age  = 20;
+        
+        if(age >= 28){
+            System.out.println("Adult");
+        }else{
+            System.out.println("minor");
+        }
     }
 }
