@@ -1,8 +1,12 @@
+import java.util.*;
+
 public class Today{
     public static void main(String args[]){
-        int i = 10;
-        if(i < 15){
-            System.out.println("condition is True");
-        }
+        ArrayList<String> names = new ArrayList<>();
+
+        names.add("Alice");
+        names.add("bod");
+
+        System.out.println(names);
     }
 }
