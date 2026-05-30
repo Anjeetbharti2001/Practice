@@ -1,7 +1,7 @@
-// Write a program for multilevel Inheritance 
+// class FOR Hierarchicla Inheritance
 class Animal{
     void eat(){
-        System.out.println("Animal eat food");
+        System.out.println("Animal eats");
     }
 }
 class Dog extends Animal{
@@ -9,18 +9,21 @@ class Dog extends Animal{
         System.out.println("Dog barks");
     }
 }
-class Puppy extends Dog{
-    void weep(){
-        System.out.println("Puppy weeps");
+class Cat extends Animal {
+    void meow(){
+        System.out.println("Cat meows");
     }
 }
 
 public class Today{
-    public static void main(String [] args){
-        Puppy p = new Puppy();
+    public static void main(String args[]){
+        Dog d = new Dog();
+        Cat c = new Cat();
 
-        p.eat();
-        p.bark();
-        p.weep();
+        d.eat();
+        d.bark();
+
+        c.eat();
+        c.meow();
     }
 }
