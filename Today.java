@@ -1,26 +1,26 @@
-class Animal{
-    void eat(){
-        System.out.println("Animal is Eating");
-    }
-}
-class Dog extends Animal{
-    void bark(){
-        System.out.println("Dog is Barking ");
-    }
+interface Father {
+    void showFather();
 }
 
-class Puppy extends Dog {
-    void weep(){
-        System.out.println("Puppy is Weeping");
+interface Mother {
+    void showMother();
+}
+
+class Child implements Father, Mother {
+    public void showFather(){
+        System.out.println("Father's methods");
     }
+    public void showMother(){
+     System.out.println("Mother's Method");
+    }
+   
 }
 
 public class Today{
     public static void main(String args[]){
-        Puppy p = new Puppy();
+        Child c = new Child();
 
-        p.eat();
-        p.bark();
-        p.weep();
+        c.showFather();
+        c.showMother();
     }
 }
