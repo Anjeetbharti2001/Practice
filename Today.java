@@ -1,29 +1,17 @@
-// class FOR Hierarchicla Inheritance
-class Animal{
+class Animal {
     void eat(){
-        System.out.println("Animal eats");
+        System.out.println("Animal is Eating ");
     }
 }
 class Dog extends Animal{
     void bark(){
-        System.out.println("Dog barks");
+        System.out.println("Dog is barking");
     }
 }
-class Cat extends Animal {
-    void meow(){
-        System.out.println("Cat meows");
-    }
-}
-
 public class Today{
     public static void main(String args[]){
         Dog d = new Dog();
-        Cat c = new Cat();
-
         d.eat();
         d.bark();
-
-        c.eat();
-        c.meow();
     }
 }
