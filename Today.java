@@ -1,15 +1,20 @@
-
 public class Today{
     public static void main(String args[]){
-        int num = 251025, rem = 0, sum = 0, temp ;
-        temp = num;
+        int units = 123;
+        int bill = 0;
 
-        while(num > 0){
-            rem = num % 10;
-            sum = sum + rem;
-            num = num /10;
+        if(units > 100){
+            if(units >= 200){
+                if(units > 300){
+                    bill = units*8;
+                }else
+                    bill = units* 6;
+            }
+            else
+                bill = units *5;
         }
-        System.out.print("Sum of Digits of " + temp + "is" + sum);
-
+                System.out.println("CHENNAI ELECTRICITY LTD,CHENNAI");
+                System.out.println("Unit consumed :" + units);
+                System.out.println("Total bill :" + bill);
     }
 }
