@@ -1,11 +1,10 @@
 public class Today{
     public static void main(String args[]){
-        int count = 0;
-        for(int i = 1; i<=100; i++){
-            if(i%2 != 0){
-                count++;
-            }
+        int sum = 0;
+        int n = 10;
+        for(int i = 1; i<=n; i++){
+            sum = sum + i;
         }
-        System.out.println("The Count of Odd number are:-" + count);
+        System.out.println("The Sum of " +n+ "number are:" + sum);
     }
 }
