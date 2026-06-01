@@ -1,15 +1,42 @@
+import java.util.*;
 public class Today{
     public static void main(String args[]){
-        int i, j, k = 8;
-        for(i = 0; i < 5; i++){
-            for(j = 0; j< k; j++){
+        int n,i,j,k,l,m,p,q,r,s;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the n values");
+        n = sc.nextInt();
+        p = n;
+        q = n;
+        for(i = n; i>= 1; i++){
+            for(j = 1; j<= i; j++){
+                System.out.println("*");
+            }
+            for(k = p*2; k<n*2 -1; k++){
                 System.out.print(" ");
             }
-            k = k - 2;
-            for(j = 0; j<= i; j++){
-                System.out.print("*");
+            for( l=i; l!= 0; l--){
+                if(l==n){
+                    continue;
+                }
+                p--;
+                System.out.println();
             }
-            System.out.println();
+            for(i = 1; i<=n; i++){
+                for(j = 1; j<=i; j++){
+                    System.out.print("*");
+                }
+                for(k = q*2-2; k > 1; k--){
+                    System.out.print(" ");
+                }
+                for(m = i; m!= 0; m--){
+                    if(m == n){
+                        continue;
+                    }
+                    System.out.print("*");
+                }
+                System.out.println();
+                q--;
+            }
         }
     }
 }
