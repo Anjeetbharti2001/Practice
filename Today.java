@@ -1,19 +1,15 @@
-import java.util.*;
 public class Today{
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number of rows\n");
-
-        int rows  = sc.nextInt();
-        System.out.println("Floyd's Triangle Generated\n");
-        int count = 1;
-        for(int i = 1; i<= rows; i++){
-            for(int j = 1; j<=i; j++){
-                System.out.print(count + " ");
-
-                count++;
-            }
-            System.out.println();
+        int a = 3; 
+        int b = 4;
+        int n = 8;
+        
+        for(int i = 1; i<=n; i++){
+            int c = a+ b;
+            System.out.print( a + " " + b + " " +  c); 
+            System.out.println(" ");
+            a = c;
+            b = b + 1;
         }
     }
 }
