@@ -1,21 +1,13 @@
-import java.util.*;
 public class Today{
     public static void main(String args[]){
-        int s = 1; 
-        int n ;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the N values");
-        n  = sc.nextInt();
-        for(int i = 1; i<=n; i++){
-            while(s <= i){
-                System.out.print(s);
-                s++;
-            }
-            s--;
-            while(s > 1){
-                System.out.print(--s);
+        int i , j, n = 1;
+        for(i = 0; i< 5; i++){
+            for(j = 0; j< 5; j++){
+                System.out.print(n + " ");
+                n++;
             }
             System.out.println();
         }
+         
     }
 }
