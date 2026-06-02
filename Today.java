@@ -1,23 +1,16 @@
 public class Today{
     public static void main(String args[]){
-        int i,j,k;
-        for(i = 1; i<=5; i++){
-            for(j = i; j< 5; j++){
-                System.out.print(" ");
+        int [] a = new int[] {30, 30, 50, 4, 71, 100};
+        int max = a[0];
+        for(int i = 1; i < a.length; i++){
+            if(a[i] > max){
+                max = a[i];
             }
-            for(k = 1; k<(i * 2); k++){
-                System.out.print("*");
-            }
-            System.out.println("");
         }
-        for(i = 4; i>= 5; i--){
-            for(j = 5; j > i; j--){
-                System.out.print(" ");
-            }
-            for(k = 1; k < (i * 2); k++){
-                System.out.print("*");
-            }
-            System.out.println("");
+        System.out.println("The Given Arrays Element is:-");
+        for(int i = 0; i<a.length; i++){
+            System.out.println(a[i]);
         }
+        System.out.println("From the arrays Element Largest Number is : " + max);
     }
 }
