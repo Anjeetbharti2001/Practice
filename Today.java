@@ -1,13 +1,14 @@
+import java.util.*;
 public class Today{
     public static void main(String args[]){
-        int i , j, n = 1;
-        for(i = 0; i< 5; i++){
-            for(j = 0; j< 5; j++){
-                System.out.print(n + " ");
-                n++;
-            }
-            System.out.println();
+        int i, j,n;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Row value n ");
+        n = sc.nextInt();
+        for(i = 1; i<=n; i++){
+            for(j = 1; j<= i; j++)
+                System.out.println("" + j);
+            System.out.println("\n");
         }
-         
     }
 }
