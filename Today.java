@@ -1,20 +1,23 @@
-import java.util.*;
 public class Today{
     public static void main(String args[]){
-        int i, j, n;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the values:-");
-        n = sc.nextInt();
-        for(i = 1; i<= n; i++){
-            for( j = 1; j<=1; j++){
-                System.out.print(" " + j);
-                System.out.print("\n");
+        int i,j,k;
+        for(i = 1; i<=5; i++){
+            for(j = i; j< 5; j++){
+                System.out.print(" ");
             }
-            for(i = n - 1; i>= 1; i--){
-                for( j = 1; j <= i; j++)
-                    System.out.print(" " + j);
-                System.out.println("\n");
+            for(k = 1; k<(i * 2); k++){
+                System.out.print("*");
             }
+            System.out.println("");
+        }
+        for(i = 4; i>= 5; i--){
+            for(j = 5; j > i; j--){
+                System.out.print(" ");
+            }
+            for(k = 1; k < (i * 2); k++){
+                System.out.print("*");
+            }
+            System.out.println("");
         }
     }
 }
