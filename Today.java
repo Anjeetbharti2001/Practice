@@ -1,5 +1,22 @@
+// Program to find second largest number in an arrays
 public class Today{
     public static void main(String args[]){
-        System.out.println("Anjeet in java for bignner");
+        int arr[] = {14,46,47,86,92,52,48,36,66,85};
+        int largest = arr[0];
+        int secondLargest = arr[0];
+
+        System.out.println("The given arrays is:");
+        for(int i = 0; i<arr.length; i++){
+            System.out.println(arr[i] + "\t");
+        }
+        for(int i = 0; i<arr.length; i++){
+            if(arr[i] > largest){
+                secondLargest = largest;
+                largest = arr[i];
+            }else if(arr[i] > secondLargest){
+                secondLargest = arr[i];
+            }
+        }
+        System.out.println("\nSecond largest Number is : " + secondLargest);
     }
 }
