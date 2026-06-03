@@ -1,36 +1,32 @@
-// Program to removes duplicate element in an arrays
+// Program to print odd and even number from an arrays
 public class Today{
-    public static int[] removeDuplicates(int[] input){
-          int j = 0;
-        int i = 1;
-        // return if the arrays length is less than 2
-        if(input.length < 2){
-            return input;
-        }
-        while(i < input.length){
-            if(input[i] == input[i]){
-                i++;
-            }else{
-                input[++j] = input[i++];
+    public static void main(String args[]){
+        int s, i;
+        int[] a = {33, 2, 4, 71, 88, 92, 9, 1};
+        for(i = 0; i<a.length; i++){
+            for(int j = i + 1; j < a.length; j++){
+                if(a[i] > a[j]){
+                    s = a[i];
+                    a[i] = a[j];
+                    a[j] = s;
+                }
             }
         }
-        int[] output = new int[j + 1];
-        for(int k = 0; k < output.length; k++){
-            output[k] = input[k];
+        System.out.print("Input numbers:-");
+        for(i = 0; i<a.length; i++){
+            System.out.print(" " + a[i]);
         }
-        return output;
-    }
-    public static void main(String arrgs[]){
-        int[] input1 = {2,3,6,6,8,9,10,10,10,10,12,12};
-        int[] output = removeDuplicates(input1);
-
-        System.out.print("Input Element : \n" );
-        for(int i : input1){
-            System.out.print( i + " ");
+        System.out.print("\nOdd numbers :");
+        for(i = 0; i<=a.length - 1; i++){
+            if(a[i] % 2!= 0){
+                System.out.print(" " + a[i]);
+            }
         }
-        System.out.print("\nOutput Element : \n");
-        for(int i : output){
-            System.out.print(i + " ");
+        System.out.print("\nEven Numbers :");
+        for(i = 0; i<a.length; i++){
+            if(a[i] % 2 == 0){
+                System.out.print(" " + a[i]);
+            }
         }
     }
 }
