@@ -1,15 +1,36 @@
-// find the index of the largest number in an arrays
+// Program to removes duplicate element in an arrays
 public class Today{
-    public static void main(String args[]){
-        int a[] = new int[]{12,44,23,56,23,78,13};
-        int max = a[0];
-        int index = 0;
-        for(int i = 0; i<a.length; i++){
-            if(max < a[i]){
-                max = a[i];
-                index = i;
+    public static int[] removeDuplicates(int[] input){
+          int j = 0;
+        int i = 1;
+        // return if the arrays length is less than 2
+        if(input.length < 2){
+            return input;
+        }
+        while(i < input.length){
+            if(input[i] == input[i]){
+                i++;
+            }else{
+                input[++j] = input[i++];
             }
         }
-        System.out.println("Indext Position of Maximum value in an is : " + index);
+        int[] output = new int[j + 1];
+        for(int k = 0; k < output.length; k++){
+            output[k] = input[k];
+        }
+        return output;
+    }
+    public static void main(String arrgs[]){
+        int[] input1 = {2,3,6,6,8,9,10,10,10,10,12,12};
+        int[] output = removeDuplicates(input1);
+
+        System.out.print("Input Element : \n" );
+        for(int i : input1){
+            System.out.print( i + " ");
+        }
+        System.out.print("\nOutput Element : \n");
+        for(int i : output){
+            System.out.print(i + " ");
+        }
     }
 }
