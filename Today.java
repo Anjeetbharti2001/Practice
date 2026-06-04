@@ -1,24 +1,10 @@
-class Node{
-    int data;
-    Node left, right;
-
-    Node(int data){
-        this.data = data;
-    }
-}
 public class Today{
-    static void inorder(Node root){
-        if(root != null){
-            inorder(root.left);
-            System.out.print(root.data + " ");
-            inorder(root.right);
-        }
+    static void myMethod(){
+        System.out.println("I just got executed!");
     }
     public static void main(String args[]){
-        Node root = new Node(1);
-        root.left = new Node(2);
-        root.right = new Node(3);
-
-        inorder(root);
+        myMethod();
+        myMethod();
+        myMethod();
     }
 }
