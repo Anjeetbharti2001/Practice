@@ -1,10 +1,9 @@
 public class Today{
-    static void myMethod(){
-        System.out.println("I just got executed!");
-    }
     public static void main(String args[]){
-        myMethod();
-        myMethod();
-        myMethod();
+        // for loop 
+        System.out.println("For Lopp:");
+        for(int i = 1; i<5; i++){
+            System.out.println("i = " + i);
+        }
     }
 }
