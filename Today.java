@@ -1,11 +1,11 @@
 public class Today{
     public static void main(String args[]){
-        // While loops 
-        System.out.println("\n While Loop");
-        int j = 1;
-        while(j <= 5){
-            System.out.println("j = " + j);
-            j++;
-        }
+        // Do- While loop
+        System.out.println("\nDo-while loop : ");
+        int k = 1;
+        do {
+            System.out.println("k = " + k);
+            k++;
+        }while(k <= 5);
     }
 }
