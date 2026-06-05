@@ -1,9 +1,11 @@
 public class Today{
     public static void main(String args[]){
-        // for loop 
-        System.out.println("For Lopp:");
-        for(int i = 1; i<5; i++){
-            System.out.println("i = " + i);
+        // While loops 
+        System.out.println("\n While Loop");
+        int j = 1;
+        while(j <= 5){
+            System.out.println("j = " + j);
+            j++;
         }
     }
 }
