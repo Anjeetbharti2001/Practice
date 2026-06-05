@@ -1,11 +1,9 @@
 public class Today{
     public static void main(String args[]){
-        // Do- While loop
-        System.out.println("\nDo-while loop : ");
-        int k = 1;
-        do {
-            System.out.println("k = " + k);
-            k++;
-        }while(k <= 5);
+        System.out.println("\nEnhanced for loop:");
+        int[] numbers = {10,20,30,40,50};
+        for(int num : numbers){
+            System.out.println("num = " + num);
+        }
     }
 }
